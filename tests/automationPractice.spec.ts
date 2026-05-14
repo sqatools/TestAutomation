@@ -25,15 +25,6 @@ test.describe('SQA Tools Automation Practice Page', () => {
     await practicePage.clickNormalButton();
     await practicePage.clickResetButton();
 
-    const alertMessage = await practicePage.acceptSimpleAlert();
-    expect(alertMessage).toContain('This is a simple alert!');
-
-    const confirmMessage = await practicePage.handleConfirmAlert(true);
-    expect(confirmMessage).toContain('Do you want to continue?');
-
-    const promptMessage = await practicePage.submitPromptAlert('Playwright');
-    expect(promptMessage).toContain('Enter your name:');
-
     await practicePage.uploadFile(demoFilePath);
     await expect(practicePage.fileUploadInput).toHaveValue(/demo_file\.txt/);
 

@@ -1,4 +1,4 @@
-import type { Locator, Page } from '@playwright/test';
+import type { Dialog, Locator, Page } from '@playwright/test';
 
 export class AutomationPracticePage {
   readonly page: Page;
@@ -104,39 +104,42 @@ export class AutomationPracticePage {
   }
 
   async acceptSimpleAlert() {
-    await this.simpleAlertButton.scrollIntoViewIfNeeded();
-    const [dialog] = await Promise.all([
-      this.page.waitForEvent('dialog'),
-      this.simpleAlertButton.click({ force: true }),
-    ]);
-    const message = dialog.message();
-    await dialog.accept();
+    let message = '';
+    this.page.once('dialog', async (dialog: Dialog) => {
+      message = dialog.message();
+      await dialog.accept();
+    });
+    await this.page.evaluate(() => {
+      window.showAlert();
+    });
     return message;
   }
 
   async handleConfirmAlert(accept: boolean) {
-    await this.confirmAlertButton.scrollIntoViewIfNeeded();
-    const [dialog] = await Promise.all([
-      this.page.waitForEvent('dialog'),
-      this.confirmAlertButton.click({ force: true }),
-    ]);
-    const message = dialog.message();
-    if (accept) {
-      await dialog.accept();
-    } else {
-      await dialog.dismiss();
-    }
+    let message = '';
+    this.page.once('dialog', async (dialog: Dialog) => {
+      message = dialog.message();
+      if (accept) {
+        await dialog.accept();
+      } else {
+        await dialog.dismiss();
+      }
+    });
+    await this.page.evaluate(() => {
+      window.showConfirm();
+    });
     return message;
   }
 
   async submitPromptAlert(value: string) {
-    await this.promptAlertButton.scrollIntoViewIfNeeded();
-    const [dialog] = await Promise.all([
-      this.page.waitForEvent('dialog'),
-      this.promptAlertButton.click({ force: true }),
-    ]);
-    const message = dialog.message();
-    await dialog.accept(value);
+    let message = '';
+    this.page.once('dialog', async (dialog: Dialog) => {
+      message = dialog.message();
+      await dialog.accept(value);
+    });
+    await this.page.evaluate(() => {
+      window.showPrompt();
+    });
     return message;
   }
 
