@@ -1,5 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","1445","should handle alert, confirm, and prompt dialogs","chromium","2026-05-14","passed","2026-05-14","SQA Tools Automation Practice Page - Dialog flows","automationPracticeAlerts.spec.ts","",""
-"","1399","has title","chromium","2026-05-14","passed","2026-05-14","","example.spec.ts","",""
-"","1888","get started link","chromium","2026-05-14","passed","2026-05-14","","example.spec.ts","",""
-"","2896","should automate key interactions using the page object model","chromium","2026-05-14","passed","2026-05-14","SQA Tools Automation Practice Page","automationPractice.spec.ts","",""
