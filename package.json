@@ -1,0 +1,24 @@
+{
+  "name": "testautomation",
+  "version": "1.0.0",
+  "description": "TestAutomation",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sqatools/TestAutomation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sqatools/TestAutomation/issues"
+  },
+  "homepage": "https://github.com/sqatools/TestAutomation#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.7.0"
+  }
+}
