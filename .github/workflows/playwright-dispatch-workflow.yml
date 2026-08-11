@@ -1,12 +1,25 @@
-name: Playwright Tests cron Workflow
+name: Playwright Tests Dispatch Workflow
 on:
-  schedule:
-    - cron: '*/5 * * * *'
+  # push:
+  #   branches: [ main, master ]
+  # pull_request:
+  #   branches: [ main, master ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Target deployment environment'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - production
 jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
+    - run: echo "Deploying to ${{ inputs.environment }}"
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
       with:
