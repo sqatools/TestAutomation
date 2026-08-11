@@ -13,7 +13,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     await practicePage.goto();
   });
 
-  test('Example 1: Form Filling and Validation', async ({ page }) => {
+  test('Example 1: Form Filling and Validation and Verify', async ({ page }) => {
     // Example demonstrates: text input, radio buttons, checkboxes, dropdown selection
     
     await test.step('Navigate to practice page', async () => {
@@ -21,7 +21,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
       console.log('✓ Successfully navigated to practice page');
     });
 
-    await test.step('Fill user credentials', async () => {
+    await test.step('Fill user credentials and verify', async () => {
       await practicePage.fillCredentials('automation_user', 'TestPassword123!');
       await expect(practicePage.usernameInput).toHaveValue('automation_user');
       await expect(practicePage.passwordInput).toHaveValue('TestPassword123!');
@@ -34,14 +34,14 @@ test.describe('SQA Tools - Complete Automation Example', () => {
       console.log('✓ Gender selection: Female');
     });
 
-    await test.step('Select programming skills', async () => {
+    await test.step('Select programming skills and verify', async () => {
       await practicePage.toggleSkills(['Python', 'Selenium']);
       await expect(practicePage.pythonCheckbox).toBeChecked();
       await expect(practicePage.seleniumCheckbox).toBeChecked();
       console.log('✓ Skills selected: Python, Selenium');
     });
 
-    await test.step('Select country from dropdown', async () => {
+    await test.step('Select country from dropdown and verify', async () => {
       await practicePage.selectCountry('USA');
       await expect(practicePage.countrySelect).toHaveValue('usa');
       console.log('✓ Country selected: USA');
