@@ -1,0 +1,24 @@
+# https://crontab.cronhub.io/
+# https://sqatools.in/github-actions-fundamentals-for-beginners/
+
+name: Daily Greeting
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+
+jobs:
+  greet1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good morning, team!"
+
+  greet2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good evening, team!"
+
+
+  greet3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good afternoon, team!"
