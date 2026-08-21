@@ -1,0 +1,8 @@
+# command to install Allure  package.
+npm install -D allure-commandline   # Install Allure CLI as a dev dependency
+
+# command to execute code with Allure report
+npm run test:allure          # Run tests with Allure reporting
+npm run allure:generate      # Generate HTML report
+npm run allure:open          # View report in browser (currently running)
+npm run allure:serve         # Serve live Allure results
