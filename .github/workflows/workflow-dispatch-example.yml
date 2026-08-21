@@ -46,7 +46,7 @@ jobs:
       - run: echo "${{ inputs.message }}"
 
   TriggerJob:
-    uses: ./.github/workflows/cron-example.yml
+    uses: ./.github/workflows/onworkflowcall-example.yml
     with:
       environment: ${{ inputs.environment }}
       message: ${{ inputs.message }}

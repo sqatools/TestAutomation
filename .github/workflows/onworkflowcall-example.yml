@@ -1,0 +1,30 @@
+# https://crontab.cronhub.io/
+# https://sqatools.in/github-actions-fundamentals-for-beginners/
+
+name: On workflow call example
+on:
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+      message:
+        required: true
+        type: string
+
+jobs:
+  greet1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good morning, team!"
+
+  greet2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good evening, team!"
+
+
+  greet3:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Good afternoon, team!"
