@@ -29,7 +29,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test --grep "@${{ inputs.Tagname }}"
+      run: npx playwright test --grep "@${{ inputs.Tagname }}" --project=${{ secrets.BROWSER_NAME }}
     - name: Generate Allure report
       if: always()
       run: npx allure generate allure-results --clean -o allure-report
