@@ -13,7 +13,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     await practicePage.goto();
   });
 
-  test('Example 1: Form Filling and Validation', async ({ page }) => {
+  test('Example 1: Form Filling and Validation', {tag: '@smoke'}, async ({ page }) => {
     // Example demonstrates: text input, radio buttons, checkboxes, dropdown selection
     
     await test.step('Navigate to practice page', async () => {
@@ -59,7 +59,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     });
   });
 
-  test('Example 2: Button Interactions and Actions', async ({ page }) => {
+  test('Example 2: Button Interactions and Actions', {tag: '@smoke'}, async ({ page }) => {
     // Example demonstrates: button clicks, element visibility, action sequences
 
     await test.step('Navigate and verify page loaded', async () => {
@@ -88,7 +88,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     });
   });
 
-  test('Example 3: File Upload and DateTime Selection', async ({ page }) => {
+  test('Example 3: File Upload and DateTime Selection', {tag: '@sanity'},  async ({ page }) => {
     // Example demonstrates: file upload, date/time input handling
 
     await test.step('Upload file', async () => {
@@ -120,7 +120,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     });
   });
 
-  test('Example 4: Dialog Handling (Alerts, Confirms, Prompts)', async ({ page }) => {
+  test('Example 4: Dialog Handling (Alerts, Confirms, Prompts)', {tag: '@sanity'}, async ({ page }) => {
     // Example demonstrates: handling JavaScript dialogs with Allure integration
 
     await test.step('Handle simple alert', async () => {
@@ -142,7 +142,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     });
   });
 
-  test('Example 5: Navigation and New Window Handling', async ({ page, context }) => {
+  test('Example 5: Navigation and New Window Handling', {tag: '@sanity'},  async ({ page, context }) => {
     // Example demonstrates: external link navigation, multiple page handling
 
     await test.step('Click external link to Google', async () => {
@@ -153,7 +153,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     });
   });
 
-  test('Example 6: iFrame Visibility and Scrolling', async ({ page }) => {
+  test('Example 6: iFrame Visibility and Scrolling', {tag: '@regression'},  async ({ page }) => {
     // Example demonstrates: iframe handling, page scrolling
 
     await test.step('Verify iframe is visible', async () => {
@@ -168,7 +168,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     });
   });
 
-  test('Example 7: Form Submission with Complete Data', async ({ page }) => {
+  test('Example 7: Form Submission with Complete Data', {tag: '@regression'}, async ({ page }) => {
     // Example demonstrates: end-to-end form filling and verification
 
     const testData = {
@@ -220,7 +220,7 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     });
   });
 
-  test('Example 8: Error Handling and Retry Logic', async ({ page }) => {
+  test('Example 8: Error Handling and Retry Logic', {tag: '@regression'}, async ({ page }) => {
     // Example demonstrates: error handling, element waiting, retry mechanisms
 
     await test.step('Wait for element with timeout', async () => {
