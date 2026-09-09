@@ -1,0 +1,23 @@
+############# Trigger pipeline on pull request event. ########################
+
+1. Create a branch from server  demo_pipeline
+2. go to git terminal and pull changes
+    -> git pull
+
+3. switch to new branch
+    -> git checkout demo_pipeline
+
+4. modify some code changes locally in new branch.
+5. push code to branch
+   -> git status
+   -> git add <filename>
+   -> git commit -m "added new code"
+   -> git push
+
+6. go to server and open repository.
+7. click on compare & pull request / contribute -> Pull request
+8. and open pull request
+9. now check playwright.yml pipeline executed once we create a pull request
+10. Once the pipeline is green, merge pull request button is enabled and we can review code
+    merge changes to main.
+
