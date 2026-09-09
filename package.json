@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/sqatools/TestAutomation#readme",
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.7.0",
     "allure-commandline": "^2.41.0",
