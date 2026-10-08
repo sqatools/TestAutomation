@@ -1,0 +1,238 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e9]:
+      - heading "Navigation Menu" [level=2] [ref=e10]
+      - generic [ref=e11]:
+        - link "Homepage" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e16]:
+          - navigation "Global" [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - button "Platform" [ref=e21] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e22]
+              - listitem [ref=e24]:
+                - button "Solutions" [ref=e26] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e27]
+              - listitem [ref=e29]:
+                - button "Resources" [ref=e31] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e32]
+              - listitem [ref=e34]:
+                - button "Open Source" [ref=e36] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e37]
+              - listitem [ref=e39]:
+                - button "Enterprise" [ref=e41] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e42]
+              - listitem [ref=e44]:
+                - link "Pricing" [ref=e45] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=e46]:
+            - button "Search or jump to, type / to search" [ref=e48] [cursor=pointer]:
+              - img [ref=e52]
+            - link "Sign in" [ref=e55] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsqatools%2FTestAutomation%2Fpulls
+              - generic [ref=e57]: Sign in
+            - link "Sign up" [ref=e58] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fpull_requests%2Findex&source=header-repo&source_repo=sqatools%2FTestAutomation
+              - generic [ref=e60]: Sign up
+            - button "Appearance settings" [ref=e61] [cursor=pointer]:
+              - img [ref=e63]
+  - main [ref=e68]:
+    - generic "Global navigation menu" [ref=e71]:
+      - navigation "Breadcrumbs" [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "sqatools" [ref=e77] [cursor=pointer]:
+              - /url: /sqatools
+              - generic [ref=e78]: sqatools
+          - listitem [ref=e79]:
+            - link "TestAutomation" [ref=e80] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation
+              - generic [ref=e81]: TestAutomation
+      - heading "Repository navigation" [level=2] [ref=e83]
+      - navigation "Repository" [ref=e84]:
+        - list [ref=e85]:
+          - listitem [ref=e86]:
+            - link "Code" [ref=e87] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation
+              - img [ref=e89]
+              - generic [ref=e91]: Code
+          - listitem [ref=e92]:
+            - link "Issues" [ref=e93] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/issues
+              - img [ref=e95]
+              - generic [ref=e98]: Issues
+          - listitem [ref=e99]:
+            - link "Pull requests (1)" [ref=e100] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/pulls
+              - img [ref=e102]
+              - generic [ref=e104]: Pull requests
+              - generic [ref=e105]:
+                - generic [ref=e106]: "1"
+                - generic [ref=e107]: (1)
+          - listitem [ref=e108]:
+            - link "Actions" [ref=e109] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/actions
+              - img [ref=e111]
+              - generic [ref=e113]: Actions
+          - listitem [ref=e114]:
+            - link "Projects" [ref=e115] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/projects
+              - img [ref=e117]
+              - generic [ref=e119]: Projects
+          - listitem [ref=e120]:
+            - link "Security and quality" [ref=e121] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/security
+              - img [ref=e123]
+              - generic [ref=e125]: Security and quality
+          - listitem [ref=e126]:
+            - link "Insights" [ref=e127] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/pulse
+              - img [ref=e129]
+              - generic [ref=e131]: Insights
+    - generic [ref=e140]:
+      - generic [ref=e144]:
+        - generic [ref=e145]:
+          - heading "All pull requests" [level=1] [ref=e148]:
+            - generic "All pull requests" [ref=e149]
+          - link "New pull request" [ref=e153] [cursor=pointer]:
+            - /url: /sqatools/TestAutomation/compare
+            - generic [ref=e155]: New pull request
+        - search "Pull requests" [ref=e156]:
+          - form "Search pull requests" [ref=e157]:
+            - generic [ref=e158]: Search pull requests
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - generic [ref=e162]:
+                  - generic [ref=e163]:
+                    - generic [ref=e164]:
+                      - text: "is:"
+                      - generic [ref=e165]: pr
+                    - generic [ref=e167]:
+                      - text: "state:"
+                      - generic [ref=e168]: open
+                  - combobox "Search pull requests" [ref=e170]: is:pr state:open
+                - button "Clear filter" [ref=e171] [cursor=pointer]:
+                  - img [ref=e172]
+              - button "Search" [ref=e174] [cursor=pointer]:
+                - img [ref=e175]
+      - generic [ref=e183]:
+        - heading "Pull requests" [level=2] [ref=e184]
+        - generic [ref=e185]:
+          - generic [ref=e186]:
+            - link "Open (1)" [ref=e187] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/pulls?q=is%3Apr+state%3Aopen
+              - generic [ref=e188]: Open
+              - generic [ref=e189]: "1"
+              - generic [ref=e190]: (1)
+            - link "Closed (2)" [ref=e191] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/pulls?q=is%3Apr+state%3Aclosed
+              - generic [ref=e192]: Closed
+              - generic [ref=e193]: "2"
+              - generic [ref=e194]: (2)
+          - generic [ref=e195]:
+            - toolbar "Pull request filters" [ref=e197]:
+              - generic [ref=e198]:
+                - button "Filter by author" [ref=e199] [cursor=pointer]:
+                  - generic [ref=e201]: Author
+                  - generic:
+                    - img
+                - button "Filter by label" [ref=e202] [cursor=pointer]:
+                  - generic [ref=e204]: Label
+                  - generic:
+                    - img
+                - button "Filter by projects" [ref=e205] [cursor=pointer]:
+                  - generic [ref=e207]: Projects
+                  - generic:
+                    - img
+                - button "Filter by milestones" [ref=e208] [cursor=pointer]:
+                  - generic [ref=e210]: Milestones
+                  - generic:
+                    - img
+                - button "Filter by reviews" [ref=e211] [cursor=pointer]:
+                  - generic [ref=e213]: Reviews
+                  - generic:
+                    - img
+                - button "Filter by assignee" [ref=e214] [cursor=pointer]:
+                  - generic [ref=e216]: Assignee
+                  - generic:
+                    - img
+                - button "Sort by Newest descending" [ref=e217] [cursor=pointer]:
+                  - generic [ref=e218]:
+                    - generic:
+                      - img
+                    - generic [ref=e220]:
+                      - generic [ref=e221]: Sort by
+                      - text: Newest
+                      - generic [ref=e222]: descending
+                  - generic:
+                    - img
+            - list "Pull requests display density" [ref=e223]:
+              - listitem [ref=e224]:
+                - button "Comfortable display density" [pressed] [ref=e225] [cursor=pointer]:
+                  - img [ref=e227]
+              - listitem [ref=e229]:
+                - button "Compact display density" [ref=e230] [cursor=pointer]:
+                  - img [ref=e232]
+        - list "Pull requests" [ref=e234]:
+          - listitem "More information available below." [ref=e235]:
+            - 'heading "Pipeline demo : Added new code" [level=3] [ref=e237]':
+              - 'link "Pipeline demo : Added new code" [ref=e238] [cursor=pointer]':
+                - /url: https://github.com/sqatools/TestAutomation/pull/3
+                - generic [ref=e239]: "Pipeline demo : Added new code"
+            - img "Open pull request" [ref=e246]
+            - generic [ref=e250]:
+              - generic [ref=e252]: "#3"
+              - generic [ref=e253]:
+                - text: ·
+                - link "Filter by author sqatools" [ref=e254] [cursor=pointer]:
+                  - /url: /sqatools/TestAutomation/pulls?q=is%3Apr+state%3Aopen+author%3Asqatools
+                  - text: sqatools
+                - text: opened Sep 9, 2026Sep 9, 2026
+              - generic "This user is the owner of the TestAutomation repository." [ref=e256]: Owner
+              - generic [ref=e258]: ·
+              - generic [ref=e261]: ·
+  - contentinfo [ref=e264]:
+    - heading "Footer" [level=2] [ref=e265]
+    - generic [ref=e266]:
+      - generic [ref=e267]:
+        - link "GitHub Homepage" [ref=e268] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e269]
+        - generic [ref=e271]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e272]:
+        - heading "Footer navigation" [level=3] [ref=e273]
+        - list "Footer navigation" [ref=e274]:
+          - listitem [ref=e275]:
+            - link "Terms" [ref=e276] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e277]:
+            - link "Privacy" [ref=e278] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e279]:
+            - link "Security" [ref=e280] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e281]:
+            - link "Status" [ref=e282] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e283]:
+            - link "Community" [ref=e284] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e285]:
+            - link "Docs" [ref=e286] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e287]:
+            - link "Contact" [ref=e288] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e289]:
+            - button "Manage cookies" [ref=e291] [cursor=pointer]
+          - listitem [ref=e292]:
+            - button "Do not share my personal information" [ref=e294] [cursor=pointer]
