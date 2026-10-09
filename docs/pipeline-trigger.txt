@@ -21,3 +21,21 @@
 10. Once the pipeline is green, merge pull request button is enabled and we can review code
     merge changes to main.
 
+
+################ types of Trigger in github Actions ####################
+
+1. On pull request
+2. On push operation
+3. On a specific date and time
+4. Workflow dispatch (it means we can trigger it manually)
+5. On workflow call (means we can call one workflow from another workflow.)
+
+
+HOme work :
+
+Create a file different workflow that from main Workflow
+main workflow 
+           - child workflow file1
+           - child workflow file2
+           - child workflow file3
+           - child workflow file4

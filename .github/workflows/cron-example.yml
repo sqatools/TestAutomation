@@ -3,10 +3,10 @@
 
 name: Daily Greeting
 on:
-    # schedule:
-    #  - cron: '0/5 * * * *'
-    pull_request:
-      branches: [ main, master ]
+    schedule:
+     - cron: '0 23 * * 5'
+    # pull_request:
+    #   branches: [ main, master ]
 
 jobs:
   greet1:
