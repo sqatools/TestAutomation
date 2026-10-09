@@ -26,7 +26,7 @@
 
 1. On pull request
 2. On push operation
-3. On a specific date and time
+3. On a specific date and time :  0 2 * * MON,THU (At 02:00 AM, only on Monday and Thursday)
 4. Workflow dispatch (it means we can trigger it manually)
 5. On workflow call (means we can call one workflow from another workflow.)
 
