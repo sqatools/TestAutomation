@@ -1,0 +1,401 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e9]:
+      - heading "Navigation Menu" [level=2] [ref=e10]
+      - generic [ref=e11]:
+        - link "Homepage" [ref=e13] [cursor=pointer]:
+          - /url: /
+          - img [ref=e14]
+        - generic [ref=e16]:
+          - navigation "Global" [ref=e17]:
+            - list [ref=e18]:
+              - listitem [ref=e19]:
+                - button "Platform" [ref=e21] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e22]
+              - listitem [ref=e24]:
+                - button "Solutions" [ref=e26] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e27]
+              - listitem [ref=e29]:
+                - button "Resources" [ref=e31] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e32]
+              - listitem [ref=e34]:
+                - button "Open Source" [ref=e36] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e37]
+              - listitem [ref=e39]:
+                - button "Enterprise" [ref=e41] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e42]
+              - listitem [ref=e44]:
+                - link "Pricing" [ref=e45] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+          - generic [ref=e46]:
+            - button "Search or jump to, type / to search" [ref=e48] [cursor=pointer]:
+              - img [ref=e52]
+            - link "Sign in" [ref=e55] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fsqatools%2FTestAutomation
+              - generic [ref=e57]: Sign in
+            - link "Sign up" [ref=e58] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=sqatools%2FTestAutomation
+              - generic [ref=e60]: Sign up
+            - button "Appearance settings" [ref=e61] [cursor=pointer]:
+              - img [ref=e63]
+  - main [ref=e68]:
+    - generic "Global navigation menu" [ref=e71]:
+      - navigation "Breadcrumbs" [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "sqatools" [ref=e77] [cursor=pointer]:
+              - /url: /sqatools
+              - generic [ref=e78]: sqatools
+          - listitem [ref=e79]:
+            - link "TestAutomation" [ref=e80] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation
+              - generic [ref=e81]: TestAutomation
+      - heading "Repository navigation" [level=2] [ref=e83]
+      - navigation "Repository" [ref=e84]:
+        - list [ref=e85]:
+          - listitem [ref=e86]:
+            - link "Code" [ref=e87] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation
+              - img [ref=e89]
+              - generic [ref=e91]: Code
+          - listitem [ref=e92]:
+            - link "Issues" [ref=e93] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/issues
+              - img [ref=e95]
+              - generic [ref=e98]: Issues
+          - listitem [ref=e99]:
+            - link "Pull requests (1)" [ref=e100] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/pulls
+              - img [ref=e102]
+              - generic [ref=e104]: Pull requests
+              - generic [ref=e105]:
+                - generic [ref=e106]: "1"
+                - generic [ref=e107]: (1)
+          - listitem [ref=e108]:
+            - link "Actions" [ref=e109] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/actions
+              - img [ref=e111]
+              - generic [ref=e113]: Actions
+          - listitem [ref=e114]:
+            - link "Projects" [ref=e115] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/projects
+              - img [ref=e117]
+              - generic [ref=e119]: Projects
+          - listitem [ref=e120]:
+            - link "Security and quality" [ref=e121] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/security
+              - img [ref=e123]
+              - generic [ref=e125]: Security and quality
+          - listitem [ref=e126]:
+            - link "Insights" [ref=e127] [cursor=pointer]:
+              - /url: /sqatools/TestAutomation/pulse
+              - img [ref=e129]
+              - generic [ref=e131]: Insights
+    - generic [ref=e144]:
+      - generic [ref=e148]:
+        - generic [ref=e151]:
+          - img "sqatools" [ref=e152]
+          - generic "TestAutomation" [ref=e153]:
+            - strong [ref=e154]:
+              - link "TestAutomation" [ref=e155] [cursor=pointer]:
+                - /url: /sqatools/TestAutomation
+          - generic [ref=e156]: Public
+        - list [ref=e158]:
+          - listitem [ref=e159]:
+            - link "You must be signed in to change notification settings" [ref=e160] [cursor=pointer]:
+              - /url: /login?return_to=%2Fsqatools%2FTestAutomation
+              - generic [ref=e161]:
+                - generic:
+                  - img
+                - generic [ref=e162]: Notifications
+          - listitem [ref=e163]:
+            - link "You must be signed in to fork a repository" [ref=e164] [cursor=pointer]:
+              - /url: /login?return_to=%2Fsqatools%2FTestAutomation
+              - generic [ref=e165]:
+                - generic:
+                  - img
+                - generic [ref=e166]:
+                  - text: Fork
+                  - generic [ref=e167]: "1"
+                  - generic [ref=e168]: (1)
+          - listitem [ref=e169]:
+            - link "Star (0)" [ref=e170] [cursor=pointer]:
+              - /url: /login?return_to=%2Fsqatools%2FTestAutomation
+              - generic [ref=e171]:
+                - generic:
+                  - img
+                - generic [ref=e172]:
+                  - text: Star
+                  - generic [ref=e173]: "0"
+                  - generic [ref=e174]: (0)
+      - generic [ref=e175]:
+        - generic [ref=e178]:
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - button "main branch" [ref=e182] [cursor=pointer]:
+                - generic [ref=e183]:
+                  - generic:
+                    - img
+                  - generic [ref=e186]: main
+                  - generic:
+                    - img
+              - generic [ref=e187]:
+                - link "Branches" [ref=e188] [cursor=pointer]:
+                  - /url: /sqatools/TestAutomation/branches
+                  - generic [ref=e189]:
+                    - generic:
+                      - img
+                    - generic [ref=e190]: Branches
+                - link "Tags" [ref=e191] [cursor=pointer]:
+                  - /url: /sqatools/TestAutomation/tags
+                  - generic [ref=e192]:
+                    - generic:
+                      - img
+                    - generic [ref=e193]: Tags
+            - generic [ref=e194]:
+              - generic [ref=e198]:
+                - img [ref=e200]
+                - combobox "Go to file" [ref=e202]
+              - button "Code" [ref=e203] [cursor=pointer]:
+                - generic [ref=e204]:
+                  - generic:
+                    - img
+                  - generic [ref=e205]: Code
+                  - generic:
+                    - img
+          - generic [ref=e206]:
+            - generic [ref=e207]:
+              - generic [ref=e209]:
+                - heading "Latest commit" [level=2] [ref=e210]
+                - generic [ref=e213]:
+                  - heading "History" [level=2] [ref=e214]
+                  - link "30 Commits" [ref=e215] [cursor=pointer]:
+                    - /url: /sqatools/TestAutomation/commits/main/
+                    - generic [ref=e216]:
+                      - generic:
+                        - img
+                      - generic [ref=e217]: 30 Commits
+              - heading "Folders and files" [level=2] [ref=e218]
+              - table "Folders and files" [ref=e220]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e221]:
+                  - row ".github/workflows, (Directory)" [ref=e222]:
+                    - cell ".github/workflows, (Directory)" [ref=e223]:
+                      - generic [ref=e224]:
+                        - img [ref=e225]
+                        - link ".github/workflows, (Directory)" [ref=e230] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/tree/main/.github/workflows
+                          - text: .github/workflows
+                    - cell [ref=e231]
+                    - cell [ref=e233]
+                  - row "allure-results, (Directory)" [ref=e236]:
+                    - cell "allure-results, (Directory)" [ref=e237]:
+                      - generic [ref=e238]:
+                        - img [ref=e239]
+                        - link "allure-results, (Directory)" [ref=e244] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/tree/main/allure-results
+                          - text: allure-results
+                    - cell [ref=e245]
+                    - cell [ref=e247]
+                  - row "docs, (Directory)" [ref=e250]:
+                    - cell "docs, (Directory)" [ref=e251]:
+                      - generic [ref=e252]:
+                        - img [ref=e253]
+                        - link "docs, (Directory)" [ref=e258] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/tree/main/docs
+                          - text: docs
+                    - cell [ref=e259]
+                    - cell [ref=e261]
+                  - row "tests, (Directory)" [ref=e264]:
+                    - cell "tests, (Directory)" [ref=e265]:
+                      - generic [ref=e266]:
+                        - img [ref=e267]
+                        - link "tests, (Directory)" [ref=e272] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/tree/main/tests
+                          - text: tests
+                    - cell [ref=e273]
+                    - cell [ref=e275]
+                  - row ".gitignore, (File)" [ref=e278]:
+                    - cell ".gitignore, (File)" [ref=e279]:
+                      - generic [ref=e280]:
+                        - img [ref=e281]
+                        - link ".gitignore, (File)" [ref=e286] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/blob/main/.gitignore
+                          - text: .gitignore
+                    - cell [ref=e287]
+                    - cell [ref=e289]
+                  - row "ALLURE_INTEGRATION_GUIDE.md, (File)" [ref=e292]:
+                    - cell "ALLURE_INTEGRATION_GUIDE.md, (File)" [ref=e293]:
+                      - generic [ref=e294]:
+                        - img [ref=e295]
+                        - link "ALLURE_INTEGRATION_GUIDE.md, (File)" [ref=e300] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/blob/main/ALLURE_INTEGRATION_GUIDE.md
+                          - text: ALLURE_INTEGRATION_GUIDE.md
+                    - cell [ref=e301]
+                    - cell [ref=e303]
+                  - row "EXAMPLE_TESTS_README.md, (File)" [ref=e306]:
+                    - cell "EXAMPLE_TESTS_README.md, (File)" [ref=e307]:
+                      - generic [ref=e308]:
+                        - img [ref=e309]
+                        - link "EXAMPLE_TESTS_README.md, (File)" [ref=e314] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/blob/main/EXAMPLE_TESTS_README.md
+                          - text: EXAMPLE_TESTS_README.md
+                    - cell [ref=e315]
+                    - cell [ref=e317]
+                  - row "README.md, (File)" [ref=e320]:
+                    - cell "README.md, (File)" [ref=e321]:
+                      - generic [ref=e322]:
+                        - img [ref=e323]
+                        - link "README.md, (File)" [ref=e328] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/blob/main/README.md
+                          - text: README.md
+                    - cell [ref=e329]
+                    - cell [ref=e331]
+                  - row "demo_file.txt, (File)" [ref=e334]:
+                    - cell "demo_file.txt, (File)" [ref=e335]:
+                      - generic [ref=e336]:
+                        - img [ref=e337]
+                        - link "demo_file.txt, (File)" [ref=e342] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/blob/main/demo_file.txt
+                          - text: demo_file.txt
+                    - cell [ref=e343]
+                    - cell [ref=e345]
+                  - row "package-lock.json, (File)" [ref=e348]:
+                    - cell "package-lock.json, (File)" [ref=e349]:
+                      - generic [ref=e350]:
+                        - img [ref=e351]
+                        - link "package-lock.json, (File)" [ref=e356] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/blob/main/package-lock.json
+                          - text: package-lock.json
+                    - cell [ref=e357]
+                    - cell [ref=e359]
+                  - row "package.json, (File)" [ref=e362]:
+                    - cell "package.json, (File)" [ref=e363]:
+                      - generic [ref=e364]:
+                        - img [ref=e365]
+                        - link "package.json, (File)" [ref=e370] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/blob/main/package.json
+                          - text: package.json
+                    - cell [ref=e371]
+                    - cell [ref=e373]
+                  - row "playwright.config.ts, (File)" [ref=e376]:
+                    - cell "playwright.config.ts, (File)" [ref=e377]:
+                      - generic [ref=e378]:
+                        - img [ref=e379]
+                        - link "playwright.config.ts, (File)" [ref=e384] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/blob/main/playwright.config.ts
+                          - text: playwright.config.ts
+                    - cell [ref=e385]
+                    - cell [ref=e387]
+                  - row "test_git_file.txt, (File)" [ref=e390]:
+                    - cell "test_git_file.txt, (File)" [ref=e391]:
+                      - generic [ref=e392]:
+                        - img [ref=e393]
+                        - link "test_git_file.txt, (File)" [ref=e398] [cursor=pointer]:
+                          - /url: /sqatools/TestAutomation/blob/main/test_git_file.txt
+                          - text: test_git_file.txt
+                    - cell [ref=e399]
+                    - cell [ref=e401]
+            - generic [ref=e405]:
+              - generic [ref=e406]:
+                - heading "Repository files navigation" [level=2] [ref=e407]
+                - navigation "Repository files" [ref=e408]:
+                  - list [ref=e409]:
+                    - listitem [ref=e410]:
+                      - link "README" [ref=e411] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e413]
+                        - generic [ref=e415]: README
+              - article [ref=e417]:
+                - generic [ref=e418]:
+                  - heading "TestAutomation" [level=1] [ref=e419]
+                  - 'link "Permalink: TestAutomation" [ref=e420] [cursor=pointer]':
+                    - /url: "#testautomation"
+                    - img [ref=e421]
+                - paragraph [ref=e423]: TestAutomation
+        - generic [ref=e426]:
+          - generic [ref=e427]:
+            - heading "About" [level=2] [ref=e428]
+            - paragraph [ref=e429]: TestAutomation
+            - heading "Resources" [level=3] [ref=e430]
+            - link "Readme" [ref=e432] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e433]
+              - text: Readme
+            - generic [ref=e435]:
+              - link "Activity" [ref=e438] [cursor=pointer]:
+                - /url: /sqatools/TestAutomation/activity
+                - img [ref=e439]
+                - text: Activity
+              - generic [ref=e441]:
+                - heading "Stars" [level=3] [ref=e442]
+                - generic [ref=e444]:
+                  - img [ref=e445]
+                  - strong [ref=e447]: "0"
+                  - text: stars
+                - heading "Watchers" [level=3] [ref=e448]
+                - generic [ref=e450]:
+                  - img [ref=e451]
+                  - strong [ref=e453]: "0"
+                  - text: watching
+                - heading "Forks" [level=3] [ref=e454]
+                - link "1 fork" [ref=e456] [cursor=pointer]:
+                  - /url: /sqatools/TestAutomation/forks
+                  - img [ref=e457]
+                  - strong [ref=e460]: "1"
+                  - text: fork
+            - link "Report repository" [ref=e462] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fsqatools%2FTestAutomation&report=sqatools+%28user%29
+          - heading "Releases" [level=2] [ref=e464]
+          - heading "Packages" [level=2] [ref=e468]
+          - heading "Contributors" [level=2] [ref=e471]
+          - heading "Languages" [level=2] [ref=e474]
+  - contentinfo [ref=e477]:
+    - heading "Footer" [level=2] [ref=e478]
+    - generic [ref=e479]:
+      - generic [ref=e480]:
+        - link "GitHub Homepage" [ref=e481] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e482]
+        - generic [ref=e484]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e485]:
+        - heading "Footer navigation" [level=3] [ref=e486]
+        - list "Footer navigation" [ref=e487]:
+          - listitem [ref=e488]:
+            - link "Terms" [ref=e489] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e490]:
+            - link "Privacy" [ref=e491] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e492]:
+            - link "Security" [ref=e493] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e494]:
+            - link "Status" [ref=e495] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e496]:
+            - link "Community" [ref=e497] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e498]:
+            - link "Docs" [ref=e499] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e500]:
+            - link "Contact" [ref=e501] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e502]:
+            - button "Manage cookies" [ref=e504] [cursor=pointer]
+          - listitem [ref=e505]:
+            - button "Do not share my personal information" [ref=e507] [cursor=pointer]

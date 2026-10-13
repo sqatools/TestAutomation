@@ -1,0 +1,4 @@
+agent : planner
+prompt:
+Go through the API documentation and create a comprehensive test plan to automate all the APIs available as per the documentation on the given website. 
+https://restful-api.dev/

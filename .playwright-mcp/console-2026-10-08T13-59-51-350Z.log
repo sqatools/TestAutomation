@@ -1,0 +1,4 @@
+[    1551ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://api.restful-api.dev/favicon.ico:0
+[   14011ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.restful-api.dev/objects/987654321:0
+[   26240ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.restful-api.dev/objects/ff808181a09d98f701a11bd08e72215f:0
+[   26640ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://api.restful-api.dev/objects/ff808181a09d98f701a11bd08e72215f:0

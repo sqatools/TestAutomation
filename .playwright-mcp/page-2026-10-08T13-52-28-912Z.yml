@@ -1,0 +1,1111 @@
+- table [ref=e10]:
+  - rowgroup [ref=e11]:
+    - row [ref=e12]:
+      - cell [ref=e13]:
+        - generic [ref=e14]:
+          - navigation
+    - row [ref=e789]:
+      - cell [ref=e790]:
+        - generic [ref=e32]:
+          - generic [ref=e37]:
+            - generic [ref=e39]:
+              - heading "Free REST API for Testing & Prototyping" [level=1] [ref=e40]:
+                - text: Free REST API for
+                - text: Testing & Prototyping
+              - heading "Real REST API which is ready to handle your HTTP requests 24/7 for free. Can be used for your demo projects, testing, learning or even educating someone else" [level=6] [ref=e41]
+              - button "View Endpoints" [ref=e43] [cursor=pointer]:
+                - text: View Endpoints
+                - img [ref=e45]
+              - generic [ref=e47]:
+                - generic [ref=e48]:
+                  - img [ref=e49]
+                  - text: Public & Private Endpoints
+                - generic [ref=e51]:
+                  - img [ref=e52]
+                  - text: Full CRUD Support
+                - generic [ref=e54]:
+                  - img [ref=e55]
+                  - text: CORS Enabled
+            - generic [ref=e59]:
+              - generic [ref=e65]: "/objects/{id}"
+              - generic [ref=e66]:
+                - generic [ref=e67]: GET https://api.restful-api.dev/objects/7
+                - generic [ref=e68]: // 200 OK
+                - generic [ref=e69]: "{"
+                - generic [ref=e70]: "\"id\": \"7\","
+                - generic [ref=e71]: "\"name\": \"Apple MacBook Pro 16\","
+                - generic [ref=e72]: "\"data\": {"
+                - generic [ref=e73]: "\"year\": 2019,"
+                - generic [ref=e74]: "\"price\": 1849.99,"
+                - generic [ref=e75]: "\"CPU model\": \"Intel Core i9\","
+                - generic [ref=e76]: "\"Hard disk size\": \"1 TB\""
+                - generic [ref=e77]: "}"
+                - generic [ref=e78]: "}"
+          - generic [ref=e79]:
+            - generic [ref=e80]:
+              - heading "Intro" [level=2] [ref=e81]
+              - heading "Welcome to our real REST API - a fully functional service backed by a real database. It lets you send, store, and retrieve data through real HTTP requests, providing an experience much like working with a production backend. Its flexible design allows you to create and manage custom data structures, making it easy to simulate realistic REST API behavior for any project." [level=6] [ref=e82]
+              - heading "Whether you’re building demos, testing features, or waiting for backend updates, this API helps you generate and test responses as if everything were already live. It offers both public and authenticated access - the public version is open for quick exploration, while the more powerful authenticated version unlocks extra features, endpoints, and flexibility to shape your own data models and collections - perfect if you want to take things a bit further." [level=6] [ref=e83]:
+                - text: Whether you’re building demos, testing features, or waiting for backend updates, this API helps you generate and test responses as if everything were already live. It offers both
+                - strong [ref=e84]: public
+                - text: and
+                - strong [ref=e85]: authenticated
+                - text: access - the public version is open for quick exploration, while the more powerful authenticated version unlocks extra features, endpoints, and flexibility to shape your own data models and collections - perfect if you want to take things a bit further.
+            - generic [ref=e87]:
+              - generic [ref=e89]:
+                - img [ref=e91]
+                - heading "Main HTTP Methods Support" [level=3] [ref=e93]
+                - paragraph [ref=e94]: "Support all major HTTP methods: GET, POST, PUT, PATCH and DELETE."
+              - generic [ref=e96]:
+                - img [ref=e98]
+                - heading "HTTPS Support" [level=3] [ref=e100]
+                - paragraph [ref=e101]: Secure connections via SSL/TLS for all API endpoints.
+              - generic [ref=e103]:
+                - img [ref=e105]
+                - heading "Cross-Origin Requests" [level=3] [ref=e107]
+                - paragraph [ref=e108]: CORS enabled for all domains, perfect for frontend development.
+              - generic [ref=e110]:
+                - img [ref=e112]
+                - heading "Flexible Resources Schema" [level=3] [ref=e114]
+                - paragraph [ref=e115]: Design any data structures and relationships using nested JSON objects for complete flexibility.
+              - generic [ref=e117]:
+                - img [ref=e119]
+                - heading "Overridable Status Codes" [level=3] [ref=e121]
+                - paragraph [ref=e122]: Authenticated endpoints include an optional feature that lets you override the returned HTTP status code to simulate different responses.
+              - generic [ref=e124]:
+                - img [ref=e126]
+                - heading "Always Available" [level=3] [ref=e128]
+                - paragraph [ref=e129]: 99.9% uptime ensures reliable access for testing anytime, anywhere.
+          - link "API Dog" [ref=e131] [cursor=pointer]:
+            - /url: https://www.apidog.com/?utm_source=blogger&utm_medium=apidev
+            - img "API Dog" [ref=e132]
+          - generic [ref=e134]:
+            - heading "Available Endpoints" [level=2] [ref=e135]
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - heading "Show endpoints for:" [level=6] [ref=e138]
+                - group [ref=e139]:
+                  - button "Authenticated" [active] [pressed] [ref=e140] [cursor=pointer]: Authenticated
+                  - button "Public" [ref=e141] [cursor=pointer]: Public
+              - list [ref=e142]:
+                - listitem [ref=e143]:
+                  - generic [ref=e144]:
+                    - heading "GET https://api.restful-api.dev/collections List all your collections info" [level=3] [ref=e791]:
+                      - button "GET https://api.restful-api.dev/collections List all your collections info" [expanded] [ref=e792] [cursor=pointer]:
+                        - generic [ref=e148]:
+                          - generic [ref=e149]:
+                            - generic [ref=e151]: GET
+                            - paragraph [ref=e152]: https://api.restful-api.dev/collections
+                          - paragraph [ref=e153]: List all your collections info
+                        - img [ref=e155]
+                    - region [ref=e423]:
+                      - generic [ref=e424]:
+                        - heading "Description" [level=6] [ref=e425]
+                        - paragraph [ref=e426]:
+                          - paragraph [ref=e427]: Retrieves a list of all available collections with basic metadata. Each collection represents a logical grouping of objects (for example, phones, computers, etc.).
+                          - paragraph [ref=e793]: "Collections are created automatically when an object is added via POST /collections/{collectionName}/objects. If the specified collectionName does not exist, it is created and the object is added to it."
+                        - separator [ref=e428]
+                        - heading "Headers" [level=6] [ref=e794]
+                        - generic [ref=e796]:
+                          - paragraph [ref=e797]:
+                            - text: •
+                            - strong [ref=e798]: x-api-key
+                            - img [ref=e799] [cursor=pointer]
+                          - generic [ref=e801]: <your_api_key>
+                          - generic [ref=e802]: required
+                        - separator [ref=e803]
+                        - heading "Parameters" [level=6] [ref=e429]
+                        - generic [ref=e430]:
+                          - generic [ref=e804]:
+                            - paragraph [ref=e805]:
+                              - text: •
+                              - strong [ref=e806]: status
+                              - text: string | number queryoptional
+                            - paragraph [ref=e807]:
+                              - paragraph [ref=e808]:
+                                - text: Optional query parameter that allows you to override the default HTTP response status code returned by the API. This is handy for testing error handling or simulating different response scenarios. You can set it either as a numeric code (for example,
+                                - strong [ref=e809]: "?status=401"
+                                - text: ) or by using a standard HTTP status name (
+                                - strong [ref=e810]: "?status=NOT_FOUND"
+                                - text: ). When provided, the API returns the specified status code along with a matching response body format.
+                          - generic [ref=e811]:
+                            - paragraph [ref=e812]:
+                              - text: •
+                              - strong [ref=e813]: auth-type
+                              - text: string queryoptional
+                            - paragraph [ref=e814]:
+                              - paragraph [ref=e815]:
+                                - text: Optional query parameter that controls authentication for a request. Default is
+                                - strong [ref=e816]: "?auth-type=none"
+                                - text: ", meaning no authentication is required."
+                              - paragraph [ref=e817]:
+                                - text: Set it to
+                                - strong [ref=e818]: jwt
+                                - text: "to access endpoints that require a JSON Web Token (JWT). In that case, include the token in the Authorization: Bearer <jwt> header. You can obtain this token from the /register or /login endpoints."
+                        - separator [ref=e437]
+                        - heading "Request url example" [level=6] [ref=e819]
+                        - paragraph [ref=e820]: https://api.restful-api.dev/collections
+                        - separator [ref=e821]
+                        - heading "Response body example" [level=6] [ref=e438]
+                        - code [ref=e442]:
+                          - generic [ref=e443]: "1"
+                          - text: "["
+                          - generic [ref=e444]: "2"
+                          - text: "{"
+                          - generic [ref=e445]: "3"
+                          - text: "\"collectionName\": \"phones\","
+                          - generic [ref=e446]: "4"
+                          - text: "\"objectCount\": 12"
+                          - generic [ref=e447]: "5"
+                          - text: "},"
+                          - generic [ref=e448]: "6"
+                          - text: "{"
+                          - generic [ref=e449]: "7"
+                          - text: "\"collectionName\": \"tablets\","
+                          - generic [ref=e450]: "8"
+                          - text: "\"objectCount\": 5"
+                          - generic [ref=e451]: "9"
+                          - text: "},"
+                          - generic [ref=e452]: "10"
+                          - text: "{"
+                          - generic [ref=e453]: "11"
+                          - text: "\"collectionName\": \"laptops\","
+                          - generic [ref=e454]: "12"
+                          - text: "\"objectCount\": 7"
+                          - generic [ref=e455]: "13"
+                          - text: "}"
+                          - generic [ref=e456]: "14"
+                          - text: "]"
+                - listitem [ref=e157]:
+                  - generic [ref=e158]:
+                    - 'heading "GET https://api.restful-api.dev/collections/{collectionName}/objects List all objects in a collection" [level=3] [ref=e822]':
+                      - 'button "GET https://api.restful-api.dev/collections/{collectionName}/objects List all objects in a collection" [expanded] [ref=e823] [cursor=pointer]':
+                        - generic [ref=e162]:
+                          - generic [ref=e163]:
+                            - generic [ref=e165]: GET
+                            - paragraph [ref=e166]: "https://api.restful-api.dev/collections/{collectionName}/objects"
+                          - paragraph [ref=e167]: List all objects in a collection
+                        - img [ref=e169]
+                    - region [ref=e553]:
+                      - generic [ref=e554]:
+                        - heading "Description" [level=6] [ref=e555]
+                        - paragraph [ref=e556]:
+                          - paragraph [ref=e557]: Retrieves a complete list of all objects stored within a specific authenticated collection created by you. You can also use query parameters to retrieve multiple specific objects by their IDs - useful when you only need a subset of objects instead of the entire collection
+                        - separator [ref=e558]
+                        - heading "Headers" [level=6] [ref=e824]
+                        - generic [ref=e826]:
+                          - paragraph [ref=e827]:
+                            - text: •
+                            - strong [ref=e828]: x-api-key
+                            - img [ref=e829] [cursor=pointer]
+                          - generic [ref=e831]: <your_api_key>
+                          - generic [ref=e832]: required
+                        - separator [ref=e833]
+                        - heading "Parameters" [level=6] [ref=e559]
+                        - generic [ref=e560]:
+                          - generic [ref=e834]:
+                            - paragraph [ref=e835]:
+                              - text: •
+                              - strong [ref=e836]: collectionName
+                              - text: string pathrequired
+                            - paragraph [ref=e837]:
+                              - paragraph [ref=e838]:
+                                - text: Name of the collection to fetch objects from. This parameter is part of the request path, replacing
+                                - strong [ref=e839]: "{collectionName}"
+                                - text: in the endpoint URL.
+                          - generic [ref=e561]:
+                            - paragraph [ref=e562]:
+                              - text: •
+                              - strong [ref=e563]: id
+                              - text: string[] queryoptional
+                            - paragraph [ref=e564]:
+                              - paragraph [ref=e565]:
+                                - text: Optional query parameter for specifying one or more object IDs. When provided, the response includes only the specified objects and excludes all others. Supports multiple values by repeating the parameter in the query string (e.g.,
+                                - strong [ref=e840]: "?id=3&id=5&id=10"
+                                - text: )
+                          - generic [ref=e841]:
+                            - paragraph [ref=e842]:
+                              - text: •
+                              - strong [ref=e843]: status
+                              - text: string | number queryoptional
+                            - paragraph [ref=e844]:
+                              - paragraph [ref=e845]:
+                                - text: Optional query parameter that allows you to override the default HTTP response status code returned by the API. This is handy for testing error handling or simulating different response scenarios. You can set it either as a numeric code (for example,
+                                - strong [ref=e846]: "?status=401"
+                                - text: ) or by using a standard HTTP status name (
+                                - strong [ref=e847]: "?status=NOT_FOUND"
+                                - text: ). When provided, the API returns the specified status code along with a matching response body format.
+                          - generic [ref=e848]:
+                            - paragraph [ref=e849]:
+                              - text: •
+                              - strong [ref=e850]: auth-type
+                              - text: string queryoptional
+                            - paragraph [ref=e851]:
+                              - paragraph [ref=e852]:
+                                - text: Optional query parameter that controls authentication for a request. Default is
+                                - strong [ref=e853]: "?auth-type=none"
+                                - text: ", meaning no authentication is required."
+                              - paragraph [ref=e854]:
+                                - text: Set it to
+                                - strong [ref=e855]: jwt
+                                - text: "to access endpoints that require a JSON Web Token (JWT). In that case, include the token in the Authorization: Bearer <jwt> header. You can obtain this token from the /register or /login endpoints."
+                          - generic [ref=e856]:
+                            - paragraph [ref=e857]:
+                              - text: •
+                              - strong [ref=e858]: limit
+                              - text: number queryoptional
+                            - paragraph [ref=e859]:
+                              - paragraph [ref=e860]: Restricts the number of objects returned in the response. Useful for paginating large collections.
+                          - generic [ref=e861]:
+                            - paragraph [ref=e862]:
+                              - text: •
+                              - strong [ref=e863]: offset
+                              - text: number queryoptional
+                            - paragraph [ref=e864]:
+                              - paragraph [ref=e865]: Skips a specified number of objects before starting to return results. Used with limit to control pagination - for example, retrieving the next page of results after the first set of items.
+                        - separator [ref=e567]
+                        - heading "Request url example" [level=6] [ref=e568]
+                        - paragraph [ref=e569]: https://api.restful-api.dev/collections/products/objects
+                        - separator [ref=e570]
+                        - heading "Response body example" [level=6] [ref=e571]
+                        - code [ref=e575]:
+                          - generic [ref=e576]: "1"
+                          - text: "["
+                          - generic [ref=e577]: "2"
+                          - text: "{"
+                          - generic [ref=e578]: "3"
+                          - text: "\"id\": \"1\","
+                          - generic [ref=e579]: "4"
+                          - text: "\"name\": \"Google Pixel 6 Pro\","
+                          - generic [ref=e580]: "5"
+                          - text: "\"data\": {"
+                          - generic [ref=e581]: "6"
+                          - text: "\"color\": \"Cloudy White\","
+                          - generic [ref=e582]: "7"
+                          - text: "\"capacity\": \"128 GB\""
+                          - generic [ref=e583]: "8"
+                          - text: "}"
+                          - generic [ref=e584]: "9"
+                          - text: "},"
+                          - generic [ref=e585]: "10"
+                          - text: "{"
+                          - generic [ref=e866]: "11"
+                          - text: "\"id\": \"2\","
+                          - generic [ref=e867]: "12"
+                          - text: "\"name\": \"Apple iPhone 12 Mini, 256GB, Blue\","
+                          - generic [ref=e868]: "13"
+                          - text: "\"data\": null"
+                          - generic [ref=e869]: "14"
+                          - text: "},"
+                          - generic [ref=e870]: "15"
+                          - text: "{"
+                          - generic [ref=e871]: "16"
+                          - text: "\"id\": \"3\","
+                          - generic [ref=e872]: "17"
+                          - text: "\"name\": \"Apple iPhone 12 Pro Max\","
+                          - generic [ref=e873]: "18"
+                          - text: "\"data\": {"
+                          - generic [ref=e874]: "19"
+                          - text: "\"color\": \"Cloudy White\","
+                          - generic [ref=e875]: "20"
+                          - text: "\"capacity GB\": 512"
+                          - generic [ref=e876]: "21"
+                          - text: "}"
+                          - generic [ref=e877]: "22"
+                          - text: "},"
+                          - generic [ref=e878]: "23"
+                          - text: "{"
+                          - generic [ref=e879]: "24"
+                          - text: "\"id\": \"4\","
+                          - generic [ref=e880]: "25"
+                          - text: "\"name\": \"Apple iPhone 11, 64GB\","
+                          - generic [ref=e881]: "26"
+                          - text: "\"data\": {"
+                          - generic [ref=e882]: "27"
+                          - text: "\"price\": 389.99,"
+                          - generic [ref=e883]: "28"
+                          - text: "\"color\": \"Purple\""
+                          - generic [ref=e884]: "29"
+                          - text: "}"
+                          - generic [ref=e885]: "30"
+                          - text: "},"
+                          - generic [ref=e886]: "31"
+                          - text: "{"
+                          - generic [ref=e887]: "32"
+                          - text: "\"id\": \"5\","
+                          - generic [ref=e888]: "33"
+                          - text: "\"name\": \"Samsung Galaxy Z Fold2\","
+                          - generic [ref=e889]: "34"
+                          - text: "\"data\": {"
+                          - generic [ref=e890]: "35"
+                          - text: "\"price\": 689.99,"
+                          - generic [ref=e891]: "36"
+                          - text: "\"color\": \"Brown\""
+                          - generic [ref=e892]: "37"
+                          - text: "}"
+                          - generic [ref=e893]: "38"
+                          - text: "},"
+                          - generic [ref=e894]: "39"
+                          - text: "{"
+                          - generic [ref=e895]: "40"
+                          - text: "\"id\": \"6\","
+                          - generic [ref=e896]: "41"
+                          - text: "\"name\": \"Apple AirPods\","
+                          - generic [ref=e897]: "42"
+                          - text: "\"data\": {"
+                          - generic [ref=e898]: "43"
+                          - text: "\"generation\": \"3rd\","
+                          - generic [ref=e899]: "44"
+                          - text: "\"price\": 120"
+                          - generic [ref=e900]: "45"
+                          - text: "}"
+                          - generic [ref=e901]: "46"
+                          - text: "},"
+                          - generic [ref=e902]: "47"
+                          - text: "{"
+                          - generic [ref=e903]: "48"
+                          - text: "\"id\": \"7\","
+                          - generic [ref=e904]: "49"
+                          - text: "\"name\": \"Apple MacBook Pro 16\","
+                          - generic [ref=e905]: "50"
+                          - text: "\"data\": {"
+                          - generic [ref=e906]: "51"
+                          - text: "\"year\": 2019,"
+                          - generic [ref=e907]: "52"
+                          - text: "\"price\": 1849.99,"
+                          - generic [ref=e908]: "53"
+                          - text: "\"CPU model\": \"Intel Core i9\","
+                          - generic [ref=e909]: "54"
+                          - text: "\"Hard disk size\": \"1 TB\""
+                          - generic [ref=e910]: "55"
+                          - text: "}"
+                          - generic [ref=e911]: "56"
+                          - text: "},"
+                          - generic [ref=e912]: "57"
+                          - text: "{"
+                          - generic [ref=e913]: "58"
+                          - text: "\"id\": \"8\","
+                          - generic [ref=e914]: "59"
+                          - text: "\"name\": \"Apple Watch Series 8\","
+                          - generic [ref=e915]: "60"
+                          - text: "\"data\": {"
+                          - generic [ref=e916]: "61"
+                          - text: "\"Strap Colour\": \"Elderberry\","
+                          - generic [ref=e917]: "62"
+                          - text: "\"Case Size\": \"41mm\""
+                          - generic [ref=e918]: "63"
+                          - text: "}"
+                          - generic [ref=e919]: "64"
+                          - text: "},"
+                          - generic [ref=e920]: "65"
+                          - text: "{"
+                          - generic [ref=e921]: "66"
+                          - text: "\"id\": \"9\","
+                          - generic [ref=e922]: "67"
+                          - text: "\"name\": \"Beats Studio3 Wireless\","
+                          - generic [ref=e923]: "68"
+                          - text: "\"data\": {"
+                          - generic [ref=e924]: "69"
+                          - text: "\"Color\": \"Red\","
+                          - generic [ref=e925]: "70"
+                          - text: "\"Description\": \"High-performance wireless noise cancelling headphones\""
+                          - generic [ref=e926]: "71"
+                          - text: "}"
+                          - generic [ref=e927]: "72"
+                          - text: "},"
+                          - generic [ref=e928]: "73"
+                          - text: "{"
+                          - generic [ref=e929]: "74"
+                          - text: "\"id\": \"10\","
+                          - generic [ref=e930]: "75"
+                          - text: "\"name\": \"Apple iPad Mini 5th Gen\","
+                          - generic [ref=e931]: "76"
+                          - text: "\"data\": {"
+                          - generic [ref=e932]: "77"
+                          - text: "\"Capacity\": \"64 GB\","
+                          - generic [ref=e933]: "78"
+                          - text: "\"Screen size\": 7.9"
+                          - generic [ref=e934]: "79"
+                          - text: "}"
+                          - generic [ref=e935]: "80"
+                          - text: "},"
+                          - generic [ref=e936]: "81"
+                          - text: "{"
+                          - generic [ref=e937]: "82"
+                          - text: "\"id\": \"11\","
+                          - generic [ref=e938]: "83"
+                          - text: "\"name\": \"Apple iPad Mini 5th Gen\","
+                          - generic [ref=e939]: "84"
+                          - text: "\"data\": {"
+                          - generic [ref=e940]: "85"
+                          - text: "\"Capacity\": \"254 GB\","
+                          - generic [ref=e941]: "86"
+                          - text: "\"Screen size\": 7.9"
+                          - generic [ref=e942]: "87"
+                          - text: "}"
+                          - generic [ref=e943]: "88"
+                          - text: "},"
+                          - generic [ref=e944]: "89"
+                          - text: "{"
+                          - generic [ref=e945]: "90"
+                          - text: "\"id\": \"12\","
+                          - generic [ref=e946]: "91"
+                          - text: "\"name\": \"Apple iPad Air\","
+                          - generic [ref=e947]: "92"
+                          - text: "\"data\": {"
+                          - generic [ref=e948]: "93"
+                          - text: "\"Generation\": \"4th\","
+                          - generic [ref=e949]: "94"
+                          - text: "\"Price\": \"419.99\","
+                          - generic [ref=e950]: "95"
+                          - text: "\"Capacity\": \"64 GB\""
+                          - generic [ref=e951]: "96"
+                          - text: "}"
+                          - generic [ref=e952]: "97"
+                          - text: "},"
+                          - generic [ref=e953]: "98"
+                          - text: "{"
+                          - generic [ref=e954]: "99"
+                          - text: "\"id\": \"13\","
+                          - generic [ref=e955]: "100"
+                          - text: "\"name\": \"Apple iPad Air\","
+                          - generic [ref=e956]: "101"
+                          - text: "\"data\": {"
+                          - generic [ref=e957]: "102"
+                          - text: "\"Generation\": \"4th\","
+                          - generic [ref=e958]: "103"
+                          - text: "\"Price\": \"519.99\","
+                          - generic [ref=e959]: "104"
+                          - text: "\"Capacity\": \"256 GB\""
+                          - generic [ref=e960]: "105"
+                          - text: "}"
+                          - generic [ref=e961]: "106"
+                          - text: "}"
+                          - generic [ref=e962]: "107"
+                          - text: "]"
+                - listitem [ref=e171]:
+                  - generic [ref=e172]:
+                    - 'heading "GET https://api.restful-api.dev/collections/{collectionName}/objects/{id} Single object from a collection" [level=3] [ref=e963]':
+                      - 'button "GET https://api.restful-api.dev/collections/{collectionName}/objects/{id} Single object from a collection" [expanded] [ref=e964] [cursor=pointer]':
+                        - generic [ref=e176]:
+                          - generic [ref=e177]:
+                            - generic [ref=e179]: GET
+                            - paragraph [ref=e180]: "https://api.restful-api.dev/collections/{collectionName}/objects/{id}"
+                          - paragraph [ref=e181]: Single object from a collection
+                        - img [ref=e183]
+                    - region [ref=e589]:
+                      - generic [ref=e590]:
+                        - heading "Description" [level=6] [ref=e591]
+                        - paragraph [ref=e592]:
+                          - paragraph [ref=e593]: Fetches detailed information about a single object inside the specified authenticated collection.
+                        - separator [ref=e595]
+                        - heading "Headers" [level=6] [ref=e596]
+                        - generic [ref=e965]:
+                          - paragraph [ref=e966]:
+                            - text: •
+                            - strong [ref=e967]: x-api-key
+                            - img [ref=e968] [cursor=pointer]
+                          - generic [ref=e970]: <your_api_key>
+                          - generic [ref=e971]: required
+                        - separator [ref=e603]
+                        - heading "Parameters" [level=6] [ref=e972]
+                        - generic [ref=e973]:
+                          - generic [ref=e974]:
+                            - paragraph [ref=e975]:
+                              - text: •
+                              - strong [ref=e976]: collectionName
+                              - text: string pathrequired
+                            - paragraph [ref=e977]:
+                              - paragraph [ref=e978]:
+                                - text: Name of the collection to fetch object from. This parameter is part of the request path, replacing
+                                - strong [ref=e979]: "{collectionName}"
+                                - text: in the endpoint URL.
+                          - generic [ref=e980]:
+                            - paragraph [ref=e981]:
+                              - text: •
+                              - strong [ref=e982]: id
+                              - text: string pathrequired
+                            - paragraph [ref=e983]:
+                              - paragraph [ref=e984]: The unique ID of the object to fetch from the collection.
+                          - generic [ref=e985]:
+                            - paragraph [ref=e986]:
+                              - text: •
+                              - strong [ref=e987]: status
+                              - text: string | number queryoptional
+                            - paragraph [ref=e988]:
+                              - paragraph [ref=e989]:
+                                - text: Optional query parameter that allows you to override the default HTTP response status code returned by the API. This is handy for testing error handling or simulating different response scenarios. You can set it either as a numeric code (for example,
+                                - strong [ref=e990]: "?status=401"
+                                - text: ) or by using a standard HTTP status name (
+                                - strong [ref=e991]: "?status=NOT_FOUND"
+                                - text: ). When provided, the API returns the specified status code along with a matching response body format.
+                          - generic [ref=e992]:
+                            - paragraph [ref=e993]:
+                              - text: •
+                              - strong [ref=e994]: auth-type
+                              - text: string queryoptional
+                            - paragraph [ref=e995]:
+                              - paragraph [ref=e996]:
+                                - text: Optional query parameter that controls authentication for a request. Default is
+                                - strong [ref=e997]: "?auth-type=none"
+                                - text: ", meaning no authentication is required."
+                              - paragraph [ref=e998]:
+                                - text: Set it to
+                                - strong [ref=e999]: jwt
+                                - text: "to access endpoints that require a JSON Web Token (JWT). In that case, include the token in the Authorization: Bearer <jwt> header. You can obtain this token from the /register or /login endpoints."
+                        - separator [ref=e1000]
+                        - heading "Request url example" [level=6] [ref=e1001]
+                        - paragraph [ref=e1002]: https://api.restful-api.dev/collections/products/objects/7
+                        - separator [ref=e1003]
+                        - heading "Response body example" [level=6] [ref=e622]
+                        - code [ref=e626]:
+                          - generic [ref=e627]: "1"
+                          - text: "{"
+                          - generic [ref=e628]: "2"
+                          - text: "\"id\": \"7\","
+                          - generic [ref=e629]: "3"
+                          - text: "\"name\": \"Apple MacBook Pro 16\","
+                          - generic [ref=e630]: "4"
+                          - text: "\"data\": {"
+                          - generic [ref=e631]: "5"
+                          - text: "\"year\": 2019,"
+                          - generic [ref=e632]: "6"
+                          - text: "\"price\": 1849.99,"
+                          - generic [ref=e633]: "7"
+                          - text: "\"CPU model\": \"Intel Core i9\","
+                          - generic [ref=e634]: "8"
+                          - text: "\"Hard disk size\": \"1 TB\""
+                          - generic [ref=e635]: "9"
+                          - text: "}"
+                          - generic [ref=e636]: "10"
+                          - text: "}"
+                - listitem [ref=e185]:
+                  - generic [ref=e186]:
+                    - 'heading "POST https://api.restful-api.dev/collections/{collectionName}/objects Add a new object to a collection" [level=3] [ref=e1004]':
+                      - 'button "POST https://api.restful-api.dev/collections/{collectionName}/objects Add a new object to a collection" [expanded] [ref=e1005] [cursor=pointer]':
+                        - generic [ref=e190]:
+                          - generic [ref=e191]:
+                            - generic [ref=e193]: POST
+                            - paragraph [ref=e194]: "https://api.restful-api.dev/collections/{collectionName}/objects"
+                          - paragraph [ref=e195]: Add a new object to a collection
+                        - img [ref=e197]
+                    - region [ref=e641]:
+                      - generic [ref=e642]:
+                        - heading "Description" [level=6] [ref=e643]
+                        - paragraph [ref=e644]:
+                          - paragraph [ref=e645]:
+                            - text: Creates a new object and adds it to the specified collection owned by the authenticated user. The request body includes a name property and a data field.
+                            - strong [ref=e1006]: The data field accepts any valid JSON structure
+                            - text: "- objects, arrays, or key-value pairs - allowing flexible and custom data formats."
+                        - separator [ref=e646]
+                        - heading "Headers" [level=6] [ref=e647]
+                        - generic [ref=e648]:
+                          - generic [ref=e1007]:
+                            - paragraph [ref=e1008]:
+                              - text: •
+                              - strong [ref=e1009]: x-api-key
+                              - img [ref=e1010] [cursor=pointer]
+                            - generic [ref=e1012]: <your_api_key>
+                            - generic [ref=e1013]: required
+                          - generic [ref=e649]:
+                            - paragraph [ref=e650]:
+                              - text: •
+                              - strong [ref=e651]: Content-Type
+                            - generic [ref=e652]: application/json
+                            - generic [ref=e653]: required
+                        - separator [ref=e654]
+                        - heading "Parameters" [level=6] [ref=e655]
+                        - generic [ref=e656]:
+                          - generic [ref=e1014]:
+                            - paragraph [ref=e1015]:
+                              - text: •
+                              - strong [ref=e1016]: collectionName
+                              - text: string pathrequired
+                            - paragraph [ref=e1017]:
+                              - paragraph [ref=e1018]:
+                                - text: The collection where the new object should be created. This value is provided as a path parameter, replacing
+                                - strong [ref=e1019]: "{collectionName}"
+                                - text: in the endpoint URL.
+                          - generic [ref=e1020]:
+                            - paragraph [ref=e1021]:
+                              - text: •
+                              - strong [ref=e1022]: status
+                              - text: string | number queryoptional
+                            - paragraph [ref=e1023]:
+                              - paragraph [ref=e1024]:
+                                - text: Optional query parameter that allows you to override the default HTTP response status code returned by the API. This is handy for testing error handling or simulating different response scenarios. You can set it either as a numeric code (for example,
+                                - strong [ref=e1025]: "?status=401"
+                                - text: ) or by using a standard HTTP status name (
+                                - strong [ref=e1026]: "?status=NOT_FOUND"
+                                - text: ). When provided, the API returns the specified status code along with a matching response body format.
+                          - generic [ref=e1027]:
+                            - paragraph [ref=e1028]:
+                              - text: •
+                              - strong [ref=e1029]: auth-type
+                              - text: string queryoptional
+                            - paragraph [ref=e1030]:
+                              - paragraph [ref=e1031]:
+                                - text: Optional query parameter that controls authentication for a request. Default is
+                                - strong [ref=e1032]: "?auth-type=none"
+                                - text: ", meaning no authentication is required."
+                              - paragraph [ref=e1033]:
+                                - text: Set it to
+                                - strong [ref=e1034]: jwt
+                                - text: "to access endpoints that require a JSON Web Token (JWT). In that case, include the token in the Authorization: Bearer <jwt> header. You can obtain this token from the /register or /login endpoints."
+                        - separator [ref=e663]
+                        - heading "Request url example" [level=6] [ref=e664]
+                        - paragraph [ref=e665]: https://api.restful-api.dev/collections/products/objects
+                        - separator [ref=e666]
+                        - heading "Request body example" [level=6] [ref=e667]
+                        - generic [ref=e669]:
+                          - button [ref=e670] [cursor=pointer]:
+                            - img [ref=e671]
+                          - code [ref=e674]:
+                            - generic [ref=e675]: "1"
+                            - text: "{"
+                            - generic [ref=e676]: "2"
+                            - text: "\"name\": \"Apple MacBook Pro 16\","
+                            - generic [ref=e677]: "3"
+                            - text: "\"data\": {"
+                            - generic [ref=e678]: "4"
+                            - text: "\"year\": 2019,"
+                            - generic [ref=e679]: "5"
+                            - text: "\"price\": 1849.99,"
+                            - generic [ref=e680]: "6"
+                            - text: "\"CPU model\": \"Intel Core i9\","
+                            - generic [ref=e681]: "7"
+                            - text: "\"Hard disk size\": \"1 TB\""
+                            - generic [ref=e682]: "8"
+                            - text: "}"
+                            - generic [ref=e683]: "9"
+                            - text: "}"
+                        - separator [ref=e685]
+                        - heading "Response body example" [level=6] [ref=e686]
+                        - code [ref=e690]:
+                          - generic [ref=e691]: "1"
+                          - text: "{"
+                          - generic [ref=e692]: "2"
+                          - text: "\"id\": \"7\","
+                          - generic [ref=e693]: "3"
+                          - text: "\"name\": \"Apple MacBook Pro 16\","
+                          - generic [ref=e694]: "4"
+                          - text: "\"data\": {"
+                          - generic [ref=e695]: "5"
+                          - text: "\"year\": 2019,"
+                          - generic [ref=e696]: "6"
+                          - text: "\"price\": 1849.99,"
+                          - generic [ref=e697]: "7"
+                          - text: "\"CPU model\": \"Intel Core i9\","
+                          - generic [ref=e698]: "8"
+                          - text: "\"Hard disk size\": \"1 TB\""
+                          - generic [ref=e699]: "9"
+                          - text: "},"
+                          - generic [ref=e700]: "10"
+                          - text: "\"createdAt\": \"2022-11-21T20:06:23.986Z\""
+                          - generic [ref=e701]: "11"
+                          - text: "}"
+                - listitem [ref=e199]:
+                  - generic [ref=e200]:
+                    - 'heading "PUT https://api.restful-api.dev/collections/{collectionName}/objects/{id} Update an object in a collection" [level=3] [ref=e1035]':
+                      - 'button "PUT https://api.restful-api.dev/collections/{collectionName}/objects/{id} Update an object in a collection" [expanded] [ref=e1036] [cursor=pointer]':
+                        - generic [ref=e204]:
+                          - generic [ref=e205]:
+                            - generic [ref=e207]: PUT
+                            - paragraph [ref=e208]: "https://api.restful-api.dev/collections/{collectionName}/objects/{id}"
+                          - paragraph [ref=e209]: Update an object in a collection
+                        - img [ref=e211]
+                    - region [ref=e706]:
+                      - generic [ref=e707]:
+                        - heading "Description" [level=6] [ref=e708]
+                        - paragraph [ref=e709]:
+                          - paragraph [ref=e710]: Replaces an existing object completely with new data inside a specific authenticated collection.
+                        - separator [ref=e711]
+                        - heading "Headers" [level=6] [ref=e712]
+                        - generic [ref=e713]:
+                          - generic [ref=e1037]:
+                            - paragraph [ref=e1038]:
+                              - text: •
+                              - strong [ref=e1039]: x-api-key
+                              - img [ref=e1040] [cursor=pointer]
+                            - generic [ref=e1042]: <your_api_key>
+                            - generic [ref=e1043]: required
+                          - generic [ref=e714]:
+                            - paragraph [ref=e715]:
+                              - text: •
+                              - strong [ref=e716]: Content-Type
+                            - generic [ref=e717]: application/json
+                            - generic [ref=e718]: required
+                        - separator [ref=e719]
+                        - heading "Parameters" [level=6] [ref=e720]
+                        - generic [ref=e721]:
+                          - generic [ref=e1044]:
+                            - paragraph [ref=e1045]:
+                              - text: •
+                              - strong [ref=e1046]: collectionName
+                              - text: string pathrequired
+                            - paragraph [ref=e1047]:
+                              - paragraph [ref=e1048]:
+                                - text: The collection that contains the object you want to fully replace. This value is provided as a path parameter, replacing
+                                - strong [ref=e1049]: "{collectionName}"
+                                - text: in the endpoint URL.
+                          - generic [ref=e722]:
+                            - paragraph [ref=e723]:
+                              - text: •
+                              - strong [ref=e724]: id
+                              - text: string pathrequired
+                            - paragraph [ref=e725]:
+                              - paragraph [ref=e726]:
+                                - text: The ID of the object to update entirely with new data. This value is provided as a path parameter, replacing
+                                - strong [ref=e727]: "{id}"
+                                - text: in the endpoint URL.
+                          - generic [ref=e1050]:
+                            - paragraph [ref=e1051]:
+                              - text: •
+                              - strong [ref=e1052]: status
+                              - text: string | number queryoptional
+                            - paragraph [ref=e1053]:
+                              - paragraph [ref=e1054]:
+                                - text: Optional query parameter that allows you to override the default HTTP response status code returned by the API. This is handy for testing error handling or simulating different response scenarios. You can set it either as a numeric code (for example,
+                                - strong [ref=e1055]: "?status=401"
+                                - text: ) or by using a standard HTTP status name (
+                                - strong [ref=e1056]: "?status=NOT_FOUND"
+                                - text: ). When provided, the API returns the specified status code along with a matching response body format.
+                          - generic [ref=e1057]:
+                            - paragraph [ref=e1058]:
+                              - text: •
+                              - strong [ref=e1059]: auth-type
+                              - text: string queryoptional
+                            - paragraph [ref=e1060]:
+                              - paragraph [ref=e1061]:
+                                - text: Optional query parameter that controls authentication for a request. Default is
+                                - strong [ref=e1062]: "?auth-type=none"
+                                - text: ", meaning no authentication is required."
+                              - paragraph [ref=e1063]:
+                                - text: Set it to
+                                - strong [ref=e1064]: jwt
+                                - text: "to access endpoints that require a JSON Web Token (JWT). In that case, include the token in the Authorization: Bearer <jwt> header. You can obtain this token from the /register or /login endpoints."
+                        - separator [ref=e728]
+                        - heading "Request url example" [level=6] [ref=e729]
+                        - paragraph [ref=e730]: https://api.restful-api.dev/collections/products/objects/7
+                        - separator [ref=e731]
+                        - heading "Request body example" [level=6] [ref=e732]
+                        - generic [ref=e734]:
+                          - button [ref=e735] [cursor=pointer]:
+                            - img [ref=e736]
+                          - code [ref=e739]:
+                            - generic [ref=e740]: "1"
+                            - text: "{"
+                            - generic [ref=e741]: "2"
+                            - text: "\"name\": \"Apple MacBook Pro 16\","
+                            - generic [ref=e742]: "3"
+                            - text: "\"data\": {"
+                            - generic [ref=e1065]: "4"
+                            - text: "\"year\": 2019,"
+                            - generic [ref=e1066]: "5"
+                            - text: "\"price\": 2049.99,"
+                            - generic [ref=e1067]: "6"
+                            - text: "\"CPU model\": \"Intel Core i9\","
+                            - generic [ref=e1068]: "7"
+                            - text: "\"Hard disk size\": \"1 TB\","
+                            - generic [ref=e1069]: "8"
+                            - text: "\"color\": \"silver\""
+                            - generic [ref=e1070]: "9"
+                            - text: "}"
+                            - generic [ref=e1071]: "10"
+                            - text: "}"
+                        - separator [ref=e743]
+                        - heading "Response body example" [level=6] [ref=e744]
+                        - code [ref=e748]:
+                          - generic [ref=e749]: "1"
+                          - text: "{"
+                          - generic [ref=e750]: "2"
+                          - text: "\"id\": \"7\","
+                          - generic [ref=e751]: "3"
+                          - text: "\"name\": \"Apple MacBook Pro 16\","
+                          - generic [ref=e752]: "4"
+                          - text: "\"data\": {"
+                          - generic [ref=e753]: "5"
+                          - text: "\"year\": 2019,"
+                          - generic [ref=e754]: "6"
+                          - text: "\"price\": 2049.99,"
+                          - generic [ref=e755]: "7"
+                          - text: "\"CPU model\": \"Intel Core i9\","
+                          - generic [ref=e756]: "8"
+                          - text: "\"Hard disk size\": \"1 TB\","
+                          - generic [ref=e757]: "9"
+                          - text: "\"color\": \"silver\""
+                          - generic [ref=e758]: "10"
+                          - text: "},"
+                          - generic [ref=e759]: "11"
+                          - text: "\"updatedAt\": \"2022-12-25T21:08:41.986Z\""
+                          - generic [ref=e1072]: "12"
+                          - text: "}"
+                - listitem [ref=e213]:
+                  - generic [ref=e214]:
+                    - 'heading "PATCH https://api.restful-api.dev/collections/{collectionName}/objects/{id} Partially update an object in a collection" [level=3] [ref=e1073]':
+                      - 'button "PATCH https://api.restful-api.dev/collections/{collectionName}/objects/{id} Partially update an object in a collection" [expanded] [ref=e1074] [cursor=pointer]':
+                        - generic [ref=e218]:
+                          - generic [ref=e219]:
+                            - generic [ref=e221]: PATCH
+                            - paragraph [ref=e222]: "https://api.restful-api.dev/collections/{collectionName}/objects/{id}"
+                          - paragraph [ref=e223]: Partially update an object in a collection
+                        - img [ref=e225]
+                    - region [ref=e763]:
+                      - generic [ref=e764]:
+                        - heading "Description" [level=6] [ref=e765]
+                        - paragraph [ref=e766]:
+                          - paragraph [ref=e767]: Applies partial updates to an object in an authenticated collection without overwriting all of its fields.
+                        - separator [ref=e768]
+                        - heading "Headers" [level=6] [ref=e1075]
+                        - generic [ref=e1076]:
+                          - generic [ref=e1077]:
+                            - paragraph [ref=e1078]:
+                              - text: •
+                              - strong [ref=e1079]: x-api-key
+                              - img [ref=e1080] [cursor=pointer]
+                            - generic [ref=e1082]: <your_api_key>
+                            - generic [ref=e1083]: required
+                          - generic [ref=e1084]:
+                            - paragraph [ref=e1085]:
+                              - text: •
+                              - strong [ref=e1086]: Content-Type
+                            - generic [ref=e1087]: application/json
+                            - generic [ref=e1088]: required
+                        - separator [ref=e1089]
+                        - heading "Parameters" [level=6] [ref=e769]
+                        - generic [ref=e770]:
+                          - generic [ref=e1090]:
+                            - paragraph [ref=e1091]:
+                              - text: •
+                              - strong [ref=e1092]: collectionName
+                              - text: string pathrequired
+                            - paragraph [ref=e1093]:
+                              - paragraph [ref=e1094]:
+                                - text: The collection that holds the object you want to modify partially. This value is provided as a path parameter, replacing
+                                - strong [ref=e1095]: "{collectionName}"
+                                - text: in the endpoint URL.
+                          - generic [ref=e771]:
+                            - paragraph [ref=e772]:
+                              - text: •
+                              - strong [ref=e773]: id
+                              - text: string pathrequired
+                            - paragraph [ref=e774]:
+                              - paragraph [ref=e775]:
+                                - text: The ID of the object to modify. This value is provided as a path parameter, replacing
+                                - strong [ref=e1096]: "{id}"
+                                - text: in the endpoint URL.
+                          - generic [ref=e1097]:
+                            - paragraph [ref=e1098]:
+                              - text: •
+                              - strong [ref=e1099]: status
+                              - text: string | number queryoptional
+                            - paragraph [ref=e1100]:
+                              - paragraph [ref=e1101]:
+                                - text: Optional query parameter that allows you to override the default HTTP response status code returned by the API. This is handy for testing error handling or simulating different response scenarios. You can set it either as a numeric code (for example,
+                                - strong [ref=e1102]: "?status=401"
+                                - text: ) or by using a standard HTTP status name (
+                                - strong [ref=e1103]: "?status=NOT_FOUND"
+                                - text: ). When provided, the API returns the specified status code along with a matching response body format.
+                          - generic [ref=e1104]:
+                            - paragraph [ref=e1105]:
+                              - text: •
+                              - strong [ref=e1106]: auth-type
+                              - text: string queryoptional
+                            - paragraph [ref=e1107]:
+                              - paragraph [ref=e1108]:
+                                - text: Optional query parameter that controls authentication for a request. Default is
+                                - strong [ref=e1109]: "?auth-type=none"
+                                - text: ", meaning no authentication is required."
+                              - paragraph [ref=e1110]:
+                                - text: Set it to
+                                - strong [ref=e1111]: jwt
+                                - text: "to access endpoints that require a JSON Web Token (JWT). In that case, include the token in the Authorization: Bearer <jwt> header. You can obtain this token from the /register or /login endpoints."
+                        - separator [ref=e777]
+                        - heading "Request url example" [level=6] [ref=e778]
+                        - paragraph [ref=e779]: https://api.restful-api.dev/collections/products/objects/7
+                        - separator [ref=e780]
+                        - heading "Request body example" [level=6] [ref=e1112]
+                        - generic [ref=e1114]:
+                          - button [ref=e1115] [cursor=pointer]:
+                            - img [ref=e1116]
+                          - code [ref=e1119]:
+                            - generic [ref=e1120]: "1"
+                            - text: "{"
+                            - generic [ref=e1121]: "2"
+                            - text: "\"name\": \"Apple MacBook Pro 16 (Updated Name)\""
+                            - generic [ref=e1122]: "3"
+                            - text: "}"
+                        - separator [ref=e1123]
+                        - heading "Response body example" [level=6] [ref=e781]
+                        - code [ref=e785]:
+                          - generic [ref=e786]: "1"
+                          - text: "{"
+                          - generic [ref=e787]: "2"
+                          - text: "\"id\": \"7\","
+                          - generic [ref=e788]: "3"
+                          - text: "\"name\": \"Apple MacBook Pro 16 (Updated Name)\","
+                          - generic [ref=e1124]: "4"
+                          - text: "\"data\": {"
+                          - generic [ref=e1125]: "5"
+                          - text: "\"year\": 2019,"
+                          - generic [ref=e1126]: "6"
+                          - text: "\"price\": 1849.99,"
+                          - generic [ref=e1127]: "7"
+                          - text: "\"CPU model\": \"Intel Core i9\","
+                          - generic [ref=e1128]: "8"
+                          - text: "\"Hard disk size\": \"1 TB\""
+                          - generic [ref=e1129]: "9"
+                          - text: "},"
+                          - generic [ref=e1130]: "10"
+                          - text: "\"updatedAt\": \"2022-12-25T21:09:46.986Z\""
+                          - generic [ref=e1131]: "11"
+                          - text: "}"
+                - listitem [ref=e1132]:
+                  - 'heading "DELETE https://api.restful-api.dev/collections/{collectionName}/objects/{id} Delete an object from a collection" [level=3] [ref=e1134]':
+                    - 'button "DELETE https://api.restful-api.dev/collections/{collectionName}/objects/{id} Delete an object from a collection" [ref=e1135] [cursor=pointer]':
+                      - generic [ref=e1137]:
+                        - generic [ref=e1138]:
+                          - generic [ref=e1140]: DELETE
+                          - paragraph [ref=e1141]: "https://api.restful-api.dev/collections/{collectionName}/objects/{id}"
+                        - paragraph [ref=e1142]: Delete an object from a collection
+                      - img [ref=e1144]
+                - listitem [ref=e1146]:
+                  - heading "POST https://api.restful-api.dev/register Register a new user account" [level=3] [ref=e1148]:
+                    - button "POST https://api.restful-api.dev/register Register a new user account" [ref=e1149] [cursor=pointer]:
+                      - generic [ref=e1151]:
+                        - generic [ref=e1152]:
+                          - generic [ref=e1154]: POST
+                          - paragraph [ref=e1155]: https://api.restful-api.dev/register
+                        - paragraph [ref=e1156]: Register a new user account
+                      - img [ref=e1158]
+                - listitem [ref=e1160]:
+                  - heading "POST https://api.restful-api.dev/login Authenticate an existing user" [level=3] [ref=e1162]:
+                    - button "POST https://api.restful-api.dev/login Authenticate an existing user" [ref=e1163] [cursor=pointer]:
+                      - generic [ref=e1165]:
+                        - generic [ref=e1166]:
+                          - generic [ref=e1168]: POST
+                          - paragraph [ref=e1169]: https://api.restful-api.dev/login
+                        - paragraph [ref=e1170]: Authenticate an existing user
+                      - img [ref=e1172]
+            - button "Learn more about REST APIs and their usage." [ref=e270] [cursor=pointer]:
+              - img [ref=e272]
+              - text: Learn more about REST APIs and their usage.
+          - generic [ref=e276]:
+            - generic [ref=e277]:
+              - heading "How to Use It" [level=2] [ref=e278]
+              - paragraph [ref=e279]: Get started with our REST API in your favorite programming language. Choose from the examples below.
+            - generic [ref=e280]:
+              - tablist [ref=e285]:
+                - tab "JavaScript" [selected] [ref=e286] [cursor=pointer]
+                - tab "Java" [ref=e287] [cursor=pointer]
+                - tab "Python" [ref=e288] [cursor=pointer]
+              - generic [ref=e290]:
+                - button [ref=e291] [cursor=pointer]:
+                  - img [ref=e292]
+                - code [ref=e295]:
+                  - generic [ref=e296]: "1"
+                  - text: // Using Fetch API
+                  - generic [ref=e297]: "2"
+                  - text: fetch('https://api.restful-api.dev/objects')
+                  - generic [ref=e298]: "3"
+                  - text: .then(response => response.json())
+                  - generic [ref=e299]: "4"
+                  - text: .then(data => console.log('GET Response:', data))
+                  - generic [ref=e300]: "5"
+                  - text: .catch(error => console.error('Error:', error));
+                  - generic [ref=e301]: "6"
+                  - generic [ref=e302]: "7"
+                  - text: // POST request
+                  - generic [ref=e303]: "8"
+                  - text: "fetch('https://api.restful-api.dev/objects', {"
+                  - generic [ref=e304]: "9"
+                  - text: "method: 'POST',"
+                  - generic [ref=e305]: "10"
+                  - text: "headers: {"
+                  - generic [ref=e306]: "11"
+                  - text: "'Content-Type': 'application/json',"
+                  - generic [ref=e307]: "12"
+                  - text: "},"
+                  - generic [ref=e308]: "13"
+                  - text: "body: JSON.stringify({"
+                  - generic [ref=e309]: "14"
+                  - text: "name: 'Apple MacBook Pro 16',"
+                  - generic [ref=e310]: "15"
+                  - text: "data: {"
+                  - generic [ref=e311]: "16"
+                  - text: "year: 2019,"
+                  - generic [ref=e312]: "17"
+                  - text: "price: 1849.99,"
+                  - generic [ref=e313]: "18"
+                  - text: "'CPU model': 'Intel Core i9',"
+                  - generic [ref=e314]: "19"
+                  - text: "'Hard disk size': '1 TB'"
+                  - generic [ref=e315]: "20"
+                  - text: "}"
+                  - generic [ref=e316]: "21"
+                  - text: "})"
+                  - generic [ref=e317]: "22"
+                  - text: "})"
+                  - generic [ref=e318]: "23"
+                  - text: .then(response => response.json())
+                  - generic [ref=e319]: "24"
+                  - text: .then(data => console.log('POST Response:', data));
+          - generic [ref=e321]:
+            - generic [ref=e322]:
+              - heading "Frequently Asked Questions" [level=2] [ref=e323]
+              - paragraph [ref=e324]: Find answers to common questions about our REST API service.
+            - generic [ref=e325]:
+              - heading "What is the difference between public and authenticated endpoints?" [level=3] [ref=e327]:
+                - button "What is the difference between public and authenticated endpoints?" [ref=e328] [cursor=pointer]:
+                  - paragraph [ref=e330]: What is the difference between public and authenticated endpoints?
+                  - img [ref=e332]
+              - heading "Can I modify or delete data?" [level=3] [ref=e335]:
+                - button "Can I modify or delete data?" [ref=e336] [cursor=pointer]:
+                  - paragraph [ref=e338]: Can I modify or delete data?
+                  - img [ref=e340]
+              - heading "Does the API support CORS?" [level=3] [ref=e343]:
+                - button "Does the API support CORS?" [ref=e344] [cursor=pointer]:
+                  - paragraph [ref=e346]: Does the API support CORS?
+                  - img [ref=e348]
+              - heading "Is this API free to use?" [level=3] [ref=e351]:
+                - button "Is this API free to use?" [ref=e352] [cursor=pointer]:
+                  - paragraph [ref=e354]: Is this API free to use?
+                  - img [ref=e356]
+              - heading "What HTTP methods are supported?" [level=3] [ref=e359]:
+                - button "What HTTP methods are supported?" [ref=e360] [cursor=pointer]:
+                  - paragraph [ref=e362]: What HTTP methods are supported?
+                  - img [ref=e364]
+              - heading "Can I override the response status code?" [level=3] [ref=e367]:
+                - button "Can I override the response status code?" [ref=e368] [cursor=pointer]:
+                  - paragraph [ref=e370]: Can I override the response status code?
+                  - img [ref=e372]
+              - heading "Can I suggest new features or endpoints?" [level=3] [ref=e375]:
+                - button "Can I suggest new features or endpoints?" [ref=e376] [cursor=pointer]:
+                  - paragraph [ref=e378]: Can I suggest new features or endpoints?
+                  - img [ref=e380]
+            - generic [ref=e382]:
+              - heading "Still have questions?" [level=6] [ref=e383]
+              - paragraph [ref=e384]: Can't find the answer you're looking for? Feel free to reach out.
+              - link "Contact Us →" [ref=e385] [cursor=pointer]:
+                - /url: /contact
+    - 'row "Home About Contact Privacy Policy DigitalOcean Referral Badge © 2026 Copyright: restful-api.dev" [ref=e386]':
+      - 'cell "Home About Contact Privacy Policy DigitalOcean Referral Badge © 2026 Copyright: restful-api.dev" [ref=e387]':
+        - contentinfo [ref=e389]:
+          - generic [ref=e390]:
+            - list [ref=e391]:
+              - listitem [ref=e392]:
+                - link "Home" [ref=e393] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=e394]:
+                - link "About" [ref=e395] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e396]:
+                - link "Contact" [ref=e397] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e398]:
+                - link "Privacy Policy" [ref=e399] [cursor=pointer]:
+                  - /url: /privacy-policy
+            - link "DigitalOcean Referral Badge" [ref=e401] [cursor=pointer]:
+              - /url: https://www.digitalocean.com/?refcode=4ad9734878c9&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge
+              - img "DigitalOcean Referral Badge" [ref=e402]
+          - generic [ref=e403]: "© 2026 Copyright: restful-api.dev"
