@@ -1,4 +1,4 @@
-name: Playwright Tests Dispatch Workflow
+name: API Playwright Tests Dispatch Workflow
 on:
   # push:
   #   branches: [ main, master ]
