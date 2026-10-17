@@ -1,9 +1,10 @@
 name: Playwright Tests cron Workflow
 on:
+  workflow_dispatch
   # schedule:
   #   - cron: '*/5 * * * *'
-  pull_request:
-    branches: [ main, master ]
+  # pull_request:
+  #   branches: [ main, master ]
 jobs:
   test:
     timeout-minutes: 60
