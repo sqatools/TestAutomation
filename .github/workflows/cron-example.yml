@@ -1,10 +1,10 @@
 # https://crontab.cronhub.io/
 # https://sqatools.in/github-actions-fundamentals-for-beginners/
 
-name: Daily Greeting
+name: Daily Greeting with Cron Schedule
 on:
     schedule:
-     - cron: '0 23 * * 5'
+     - cron: '0 2 * * 1-5'
     # pull_request:
     #   branches: [ main, master ]
 
