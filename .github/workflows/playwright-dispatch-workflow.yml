@@ -4,6 +4,7 @@ on:
   #   branches: [ main, master ]
   # pull_request:
   #   branches: [ main, master ]
+  # Workflow dispatch helps to execute this workflow manually. 
   workflow_dispatch:
     inputs:
       Tagname:
@@ -12,9 +13,11 @@ on:
         default: 'smoke'
         type: choice
         options:
+          - ui
           - smoke
           - sanity
           - regression
+          - api
 jobs:
   test:
     timeout-minutes: 60
