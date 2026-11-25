@@ -1,0 +1,37 @@
+name: UI Automation Execution
+on:
+  workflow_dispatch:
+    inputs:
+      testType:
+        description: 'Select the type of tests to run'
+        required: true
+        default: 'playwright'
+        type: choice
+        options:
+          - api
+          - ui
+          
+jobs:
+    execute-tests:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v4
+          - name: Set up Node.js
+            uses: actions/setup-node@v4
+            with:
+              node-version: lts/*
+          - name: Install dependencies
+            run: npm ci
+          - name: Run tests based on selected type
+            run: |
+              if [ "${{ github.event.inputs.testType }}" == "api" ]; then
+                echo "Running API tests..."
+                # Add commands to run API tests here
+              elif [ "${{ github.event.inputs.testType }}" == "ui" ]; then
+                echo "Running UI tests..."
+                # Add commands to run UI tests here
+              else
+                echo "Invalid test type selected."
+                exit 1
+              fi

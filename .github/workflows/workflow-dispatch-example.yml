@@ -20,7 +20,33 @@ on:
         default: 'Good morning, team!'
         type: string
 
+      serverURL:
+        description: 'Server URL for deployment'
+        required: true
+        default: 'http://localhost:3000'
+        type: string
+
+      Username:
+        description: 'Username for deployment'
+        required: true
+        default: 'admin'
+        type: string
+
+      Password:
+        description: 'Password for deployment'
+        required: true
+        default: 'password123'
+        type: string
+
 jobs:
+  CredentialJob:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Server URL- ${{ inputs.serverURL }}"
+      - run: echo "Environment- ${{ inputs.environment }}"
+      - run: echo "Username- ${{ inputs.Username }}"
+      - run: echo "Password- ${{ inputs.Password }}"
+
   deploy1:
     runs-on: ubuntu-latest
     steps:

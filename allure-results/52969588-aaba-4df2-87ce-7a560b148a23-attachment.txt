@@ -1,0 +1,72 @@
+[
+  {
+    id: 8663910,
+    name: 'Atmananda Devar',
+    email: 'atmananda_devar@kreiger.example',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8663906,
+    name: 'Acharyanandana Tandon',
+    email: 'acharyanandana_tandon@heidenreich.test',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8663905,
+    name: 'Chandak Abbott',
+    email: 'abbott_chandak@casper.example',
+    gender: 'female',
+    status: 'inactive'
+  },
+  {
+    id: 8663903,
+    name: 'Agrata Embranthiri',
+    email: 'embranthiri_agrata@rath.example',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8663902,
+    name: 'Gaurang Deshpande',
+    email: 'deshpande_gaurang@bogan.example',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8663901,
+    name: 'Ujjwal Ahuja',
+    email: 'ahuja_ujjwal@nicolas-west.example',
+    gender: 'female',
+    status: 'active'
+  },
+  {
+    id: 8663900,
+    name: 'Vyas Nehru',
+    email: 'nehru_vyas@goldner.test',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8663899,
+    name: 'Pranay Dubashi',
+    email: 'pranay_dubashi@macgyver-padberg.test',
+    gender: 'male',
+    status: 'active'
+  },
+  {
+    id: 8663898,
+    name: 'Diptendu Nehru',
+    email: 'diptendu_nehru@schneider-dickinson.test',
+    gender: 'male',
+    status: 'inactive'
+  },
+  {
+    id: 8663897,
+    name: 'Rep. Atmanand Mehra',
+    email: 'atmanand_rep_mehra@lebsack-windler.example',
+    gender: 'male',
+    status: 'inactive'
+  }
+]

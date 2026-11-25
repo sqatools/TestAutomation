@@ -25,6 +25,18 @@
 			],
 			"gallery": "https://api.mcp.github.com",
 			"version": "2.0.2"
+		},
+		"io.github.microsoft/awesome-copilot": {
+			"type": "stdio",
+			"command": "docker",
+			"args": [
+				"run",
+				"-i",
+				"--rm",
+				"ghcr.io/microsoft/mcp-dotnet-samples/awesome-copilot:1.0.2026101523"
+			],
+			"gallery": "https://api.mcp.github.com",
+			"version": "1.0.2026101523"
 		}
 	},
 	"inputs": [

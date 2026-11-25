@@ -1,0 +1,92 @@
+# What's the name we show? This is the name of the workflow that 
+# shows in a Playwright workflow execution. 
+name: Playwright Tests
+
+# When do we want to run this workflow?
+# there different events that can trigger a workflow, like push, pull_request, schedule, manually etc.
+# In this case, we want to run the workflow when a pull request is created or updated
+on:
+  workflow_dispatch
+  # push:
+  #   branches: [ main, master ]
+  # pull_request:
+  #   branches: [ main, master ]
+
+# What are the jobs we want to run in this workflow?
+# A job is a set of steps that execute on the same runner.
+jobs:
+
+  # Each job runs in a fresh instance of a virtual environment, 
+  # so we need to set up the environment for each job.
+  test:
+
+    # How long do we want to allow this job to run before it is automatically cancelled?
+    timeout-minutes: 60
+    # What type of virtual environment do we want to use for this job?
+    # git create a fresh instance of a virtual environment for each job, 
+    # so we need to set up the environment for each job.
+    runs-on: ubuntu-latest
+    # What are the steps we want to run in this job?
+    steps:
+
+      # Each step is a single task that can run commands, 
+      # set up the environment, or run actions.
+      # The first step is to check out the code from the repository.
+    - uses: actions/checkout@v4
+
+      # The second step is to set up Node.js, which is required to run Playwright tests.
+    - uses: actions/setup-node@v4
+
+      # make sure to use the latest LTS version of Node.js, which is recommended for most projects.
+      with:
+        node-version: lts/*
+
+      # The third step is to install the dependencies for the project.
+    - name: Install dependencies
+           # This step runs the command `npm ci`, which installs the dependencies listed 
+           # in the `package-lock.json` file.
+      run: npm ci
+
+      # The fourth step is to install the Playwright browsers, which are required to run the tests.
+    - name: Install Playwright Browsers
+           # This step runs the command `npx playwright install --with-deps`, 
+           # which installs the Playwright browsers and their dependencies.
+      run: npx playwright install --with-deps
+
+      # The fifth step is to run the Playwright tests.
+    - name: Run Playwright tests
+          # This step runs the command `npx playwright test`, which executes the Playwright tests.
+      run: npx playwright test
+      
+      # The sixth step is to generate the Allure report, which is a test report that provides 
+      # detailed information about the test execution.
+    - name: Generate Allure report
+          # This step runs the command `npx allure generate allure-results --clean -o allure-report`,
+          # which generates the Allure report from the test results.
+      if: always()
+      run: npx allure generate allure-results --clean -o allure-report
+
+      # The seventh step is to upload the Playwright report as an artifact, 
+      # which allows us to download the report after the workflow has completed.
+    - name: Upload Playwright report
+      if: always()
+      # This step uses the `actions/upload-artifact` action to upload the Playwright 
+      # report as an artifact.
+      uses: actions/upload-artifact@v4
+      with:
+        # The name of the artifact is `playwright-report`, and the path to the report 
+        # is `playwright-report/`.
+        name: playwright-report
+        path: playwright-report/
+        retention-days: 30
+
+      # The eighth step is to upload the Allure report as an artifact, 
+      # which allows us to download the report after the workflow has completed.
+    - name: Upload Allure report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: allure-report
+        # is `allure-report/`.
+        path: allure-report/
+        retention-days: 30
