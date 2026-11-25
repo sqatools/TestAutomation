@@ -1,0 +1,14 @@
+Agent : copilot agent
+1. Create a comprehensive test plan with positive and negative scenarios. Navigate each and every page and its components on the given website, and try to cover each business logic, corner cases, and field validation test cases in the test plan.
+2. Generate automation or implement automation code as per the test plan. Execute automation test cases and fix the failures.
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+3. Move the pages directory out of the test folder. The test folder should only contain test cases. The page object model should be maintained separately. 
+Hierarchy should be 
+- pages
+- tests
+- api
+- specs
+- docs
+- .github
+and remainting files as it is, don't update them.

@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { AutomationPracticePage } from './page-objects/automationPracticePage';
+import { AutomationPracticePage } from '../pages/automationPracticePage';
 
 const practiceUrl = 'https://sqatools.in/automation-practice-page/';
 const demoFilePath = 'demo_file.txt';
@@ -260,4 +260,3 @@ test.describe('SQA Tools - Complete Automation Example', () => {
     }
   });
 });
-

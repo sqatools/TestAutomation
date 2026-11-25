@@ -5,7 +5,7 @@ import {
   SauceDemoInventoryPage,
   SauceDemoLoginPage,
   SauceDemoMenu,
-} from '../page-objects/sauceDemoPages';
+} from '../../pages/sauceDemoPages';
 
 const credentials = {
   standardUser: 'standard_user',
